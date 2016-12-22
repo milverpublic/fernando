@@ -22,11 +22,12 @@ export class APIService {
                     }
 				})
 				.addFullRequestInterceptor(function(element, operation, what, url, headers) {
+					console.log("request...");
 					let token = $window.localStorage.satellizer_token;
 					if (token) {
 						headers.Authorization = 'Bearer ' + token;
 					}
-				});
+				})
 		});
 	}
 }

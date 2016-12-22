@@ -15,7 +15,7 @@ angular.module('app.services', []);
 angular.module('app.config', []);
 angular.module('app.directives', []);
 angular.module('app.components', [
-	'ui.router', 'ui.bootstrap', 'toastr', 'angular-loading-bar',
+	'ui.router', 'ui.bootstrap', 'toastr',
 	'restangular', 'ngStorage', 'satellizer'
 ]);
 

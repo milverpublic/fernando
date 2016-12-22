@@ -1,17 +1,23 @@
-<form ng-submit="vm.login()">
-	<div>
-		<md-input-container class="LoginForm-inputContainer">
-			<label>Email</label>
-			<input type="email" ng-model="vm.email">
-		</md-input-container>
-	</div>
+<form ng-submit="vm.login()" class="form-horizontal form-group-sm">
+	<fieldset>
+		<legend>Log in to your account</legend>
+		<div class="form-group">
+			<label for="email" class="col-sm-2 control-label">Email</label>
+			<div class="col-sm-10">
+				<input type="email" id="email" ng-model="vm.email" class="form-control">
+			</div>
+		</div>
 
-	<div>
-		<md-input-container class="LoginForm-inputContainer">
-			<label>Password</label>
-			<input type="password" ng-model="vm.password">
-		</md-input-container>
-	</div>
-
-	<md-button type="submit" class="LoginForm-submit md-primary md-raised">Log in</md-button>
+		<div class="form-group">
+			<label for="password" class="col-sm-2 control-label">Password</label>
+			<div class="col-sm-10">
+				<input type="password" id="password" ng-model="vm.password" class="form-control">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<button type="submit" class="btn btn-default">Log in</button>
+			</div>
+		</div>
+	</fieldset>
 </form>

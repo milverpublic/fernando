@@ -15,6 +15,8 @@
     <![endif]-->
 
     <style><?php require(public_path("css/critical.css")) ?></style>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </head>
 <body>
@@ -30,6 +32,7 @@
     <app-root></app-root>
 
 
+    <script src="{{asset("js/jquery.js")}}"></script>
     <script>
     (function(){
         var link = document.createElement("link");
@@ -41,6 +44,7 @@
     </script>
 
     <script src="{!! elixir('js/final.js') !!}" async></script>
-
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
