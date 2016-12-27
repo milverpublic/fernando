@@ -20,4 +20,10 @@ export class ToastService {
             progressBar: true
 		});
 	}
+	info(content){
+        this.toastr.info(content,'Info...',{
+            closeButton: true,
+            progressBar: true
+		});
+	}
 }

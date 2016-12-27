@@ -9,7 +9,6 @@ class AppRootController {
     $onInit() {
         this.registerServiceWorker();
         this.checkForNewerVersions();
-        this.toastr.success('Hello world!', 'Toastr fun!');
     }
 
     registerServiceWorker() {
@@ -38,7 +37,7 @@ class AppRootController {
             navigator.serviceWorker.controller.onstatechange = (e) => {
 
                 if (e.target.state === 'redundant') {
-                    this.toastr.info('A newer version of this site is available.','Refresh');
+                    this.ToastService.info('A newer version of this site is available.');
                 }
             };
         }

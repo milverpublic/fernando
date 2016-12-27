@@ -25,3 +25,10 @@ Route::post('auth/password/reset', 'Auth\PasswordResetController@reset');
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:api');
+
+
+
+
+Route::resource('rols', 'RolAPIController');
+
+Route::resource('rols', 'RolAPIController');
