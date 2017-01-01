@@ -6,7 +6,7 @@ class AppHeaderController{
     }
 
     $onInit(){
-
+        this.isCollapsed=true;
     }
 }
 

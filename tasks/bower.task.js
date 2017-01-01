@@ -35,7 +35,15 @@ Elixir.extend('bower', function(jsOutputFile, jsOutputFolder, cssOutputFile, css
     };
 
     new Task('bower-js', function() {
-        return gulp.src(mainBowerFiles())
+        return gulp.src(mainBowerFiles({
+            overrides: {
+                jquery: {
+                    main: [
+                        './dist/jquery.js'
+                    ]
+                }
+            }
+        }))
             .on('error', onError)
             .pipe(filter('**/*.js'))
             .pipe(concat(jsFile, {sourcesContent: true}))
@@ -51,7 +59,20 @@ Elixir.extend('bower', function(jsOutputFile, jsOutputFolder, cssOutputFile, css
 
 
     new Task('bower-css', function(){
-        return gulp.src(mainBowerFiles())
+        return gulp.src(mainBowerFiles({
+            overrides: {
+                bootstrap: {
+                    main: [
+                        './dist/css/bootstrap.min.css'
+                    ]
+                },
+                "angular-bootstrap":{
+                    main: [
+                        'ui-bootstrap-csp.css'
+                    ]
+                }
+            }
+        }))
             .on('error', onError)
             .pipe(filter('**/*.css'))
             .pipe(concat(cssFile))
@@ -64,5 +85,19 @@ Elixir.extend('bower', function(jsOutputFile, jsOutputFolder, cssOutputFile, css
                 message: ' '
             }));
     }).watch('bower.json');
+
+    new Task('bower-fonts', function () {
+        return gulp.src(mainBowerFiles({
+            overrides: {
+                bootstrap: {
+                    main: [
+                        './dist/fonts/*.*'
+                    ]
+                }
+            }
+        }))
+            .pipe(filter('**/*.{eot,svg,ttf,woff,woff2}'))
+            .pipe(gulp.dest("../public/fonts/"))
+    }).watch('bower.json')
 
 });
