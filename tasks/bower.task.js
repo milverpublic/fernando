@@ -97,7 +97,7 @@ Elixir.extend('bower', function(jsOutputFile, jsOutputFolder, cssOutputFile, css
             }
         }))
             .pipe(filter('**/*.{eot,svg,ttf,woff,woff2}'))
-            .pipe(gulp.dest("public/fonts/"))
+            .pipe(gulp.dest("public/build/fonts/"))
     }).watch('bower.json')
 
 });

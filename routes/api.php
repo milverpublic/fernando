@@ -26,10 +26,6 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:api');
 
-Route::resource('rols', 'RolAPIController');
-
-Route::resource('user_rols', 'UserRolAPIController');
-
 Route::resource('people', 'PersonAPIController');
 
 Route::resource('pacients', 'PacientAPIController');
