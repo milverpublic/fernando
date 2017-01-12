@@ -29,3 +29,9 @@ Route::get('/user', function (Request $request) {
 Route::resource('people', 'PersonAPIController');
 
 Route::resource('pacients', 'PacientAPIController');
+
+Route::resource('control_sheets', 'ControlSheetAPIController');
+
+Route::resource('observations', 'ObservationAPIController');
+
+Route::resource('attachments', 'AttachmentAPIController');

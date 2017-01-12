@@ -75,6 +75,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/tymon/jwt-auth" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/zizaco/entrust" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -164,6 +165,7 @@
           <root url="file://$MODULE_DIR$/vendor/tymon/jwt-auth" />
           <root url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
           <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
+          <root url="file://$MODULE_DIR$/vendor/zizaco/entrust" />
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/barryvdh/laravel-cors" />
@@ -239,6 +241,7 @@
           <root url="file://$MODULE_DIR$/vendor/tymon/jwt-auth" />
           <root url="file://$MODULE_DIR$/vendor/vlucas/phpdotenv" />
           <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
+          <root url="file://$MODULE_DIR$/vendor/zizaco/entrust" />
         </SOURCES>
       </library>
     </orderEntry>

@@ -1,0 +1,36 @@
+<a ui-sref="app.controlsheetcreate" class="btn btn-sm btn-success">create</a>
+<table st-table="rowCollection" class="table table-striped">
+    <thead>
+    <tr>
+        <th>fecha tratamiento</th>
+        <th>tratamiento</th>
+        <th>comentario</th>
+        <th>tratamiento next</th>
+        <th>pacient_id</th>
+        <th>revision</th>
+        <th>comentario</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="row in vm.rowCollection">
+        <td>{{row.fecha_tratamiento}}</td>
+        <td>{{row.tratamiento}}</td>
+        <td>
+            <a class="btn btn-link"><i class="fa fa-lg fa-comment"></i></a>
+            <span class="badge badge-notify">3</span>
+            <a class="btn btn-link"><i class="fa fa-lg fa-paperclip"></i></a>
+            <span class="badge badge-notify">3</span>
+        </td>
+        <td>{{row.tratamiento_next}}</td>
+        <td>{{row.pacient_id }}</td>
+        <td>
+            <i class="fa fa-lg fa-{{row.status}}"></i>
+        <td>
+            <a class="btn btn-link"><i class="fa fa-lg fa-comment"></i></a>
+            <span class="badge badge-notify">3</span>
+            <a class="btn btn-link"><i class="fa fa-lg fa-paperclip"></i></a>
+            <span class="badge badge-notify">3</span>
+        </td>
+    </tr>
+    </tbody>
+</table>

@@ -35,6 +35,22 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
                 }
             }
         })
+        .state('app.controlsheet', {
+            url: '/',
+            views: {
+                'main@': {
+                    templateUrl: getView('control-sheet')
+                }
+            }
+        })
+        .state('app.controlsheetcreate', {
+            url: '/create',
+            views: {
+                'main@': {
+                    templateUrl: getView('control-sheet-create')
+                }
+            }
+        })
         .state('app.login', {
 			url: '/login',
 			views: {

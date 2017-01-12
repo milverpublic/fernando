@@ -181,10 +181,11 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\ResponseMacroServiceProvider::class,
-
+        /*Generators*/
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
         \InfyOm\Generator\InfyOmGeneratorServiceProvider::class,
-
+        /*permison roles*/
+        Zizaco\Entrust\EntrustServiceProvider::class,
     ],
 
     /*
@@ -232,6 +233,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+
+        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
 
     ],
 
