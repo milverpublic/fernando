@@ -38,7 +38,7 @@ class ObservationAPIController extends AppBaseController
     {
         $this->observationRepository->pushCriteria(new RequestCriteria($request));
         $this->observationRepository->pushCriteria(new LimitOffsetCriteria($request));
-        $observations = $this->observationRepository->all();
+        $observations = $this->observationRepository->findWhere(["control_sheet_id"=>$request->get("control_sheet_id")]);
 
         return $this->sendResponse($observations->toArray(), 'Observations retrieved successfully');
     }

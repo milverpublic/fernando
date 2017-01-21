@@ -38,7 +38,7 @@ class ControlSheetAPIController extends AppBaseController
     {
         $this->controlSheetRepository->pushCriteria(new RequestCriteria($request));
         $this->controlSheetRepository->pushCriteria(new LimitOffsetCriteria($request));
-        $controlSheets = $this->controlSheetRepository->all();
+        $controlSheets = $this->controlSheetRepository->findWhere(['pacient_id'=>$request->get("pacient_id")]);
 
         return $this->sendResponse($controlSheets->toArray(), 'Control Sheets retrieved successfully');
     }

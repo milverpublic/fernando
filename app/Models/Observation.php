@@ -22,7 +22,8 @@ class Observation extends Model
 
     public $fillable = [
         'title',
-        'body'
+        'body',
+        'control_sheet_id'
     ];
 
     /**
@@ -32,7 +33,8 @@ class Observation extends Model
      */
     protected $casts = [
         'title' => 'string',
-        'body' => 'string'
+        'body' => 'string',
+        'control_sheet_id' => 'integer'
     ];
 
     /**
@@ -42,7 +44,8 @@ class Observation extends Model
      */
     public static $rules = [
         'title' => 'required',
-        'body' => 'required'
+        'body' => 'required',
+        'control_sheet_id' => 'required'
     ];
 
     

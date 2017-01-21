@@ -13,7 +13,8 @@ class ControlSheetRepository extends BaseRepository
     protected $fieldSearchable = [
         'fecha_tratamiento',
         'tratamiento',
-        'tratamiento_next'
+        'tratamiento_next',
+        'pacient_id'
     ];
 
     /**

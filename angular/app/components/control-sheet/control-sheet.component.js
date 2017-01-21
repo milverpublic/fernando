@@ -1,15 +1,71 @@
 class ControlSheetController{
-    constructor(){
+    constructor($log,ToastService,API,$state,$stateParams,$uibModal,$scope){
         'ngInject';
+        this.$log=$log;
+        this.ToastService=ToastService;
+        this.API=API;
+        this.$state=$state;
+        this.$stateParams=$stateParams;
+        this.$scope=$scope;
+        this.$uibModal=$uibModal;
+        this.animationsEnabled = true;
+        this.pacientId=this.$stateParams.pacientId;
         this.rowCollection
     }
 
     $onInit(){
-        this.rowCollection = [
-            {fecha_tratamiento: '01-02-2017', tratamiento: 'Renard', tratamiento_next: '1987-05-21', pacient_id: 1, status: 'check'},
-            {fecha_tratamiento: '01-02-2017', tratamiento: 'Faivre', tratamiento_next: '1987-04-25', pacient_id: 2, status: 'check'},
-            {fecha_tratamiento: '01-02-2017', tratamiento: 'Frere', tratamiento_next: '1955-08-27', pacient_id: 3, status: 'remove'}
-        ];
+        this.loadControlSheets();
+    }
+    loadControlSheets(){
+        this.$log.debug(this.$stateParams.pacientId);
+        let vm=this;
+        this.API.one('control_sheets').get({'pacient_id':this.$stateParams.pacientId}).then(function (data) {
+            vm.rowCollection=data;
+        });
+    }
+    commentSave(comment,id){
+        let vm=this;
+        this.API.all('observations').post(comment).then(function (data) {
+            vm.ToastService.show(data.message);
+            vm.$state.go('app.controlsheet',{pacientId:vm.$stateParams.pacientId});
+            vm.loadControlSheets();
+        });
+    }
+    modalOpenComment (size,id) {
+        let $uibModal = this.$uibModal;
+        let $mv = this;
+        let $comments=null;
+        this.API.one('observations').get({'control_sheet_id':id}).then(function (data) {
+            $comments=data;
+            $uibModal.open({
+                animation: true,
+                templateUrl: 'CommentModalContent.html',
+                controller: $mv.CommentController,
+                controllerAs: 'mvm',
+                size: size,
+                resolve: {
+                    vm:$mv,
+                    id:id,
+                    comments:$comments
+                }
+            });
+        });
+    }
+    CommentController ($uibModalInstance,vm,id,comments) {
+        'ngInject'
+        this.comment={
+            control_sheet_id:id
+        };
+        this.comments=comments;
+        this.commentCreate = () => {
+            console.log(this.comment);
+            vm.commentSave(this.comment,id);
+            $uibModalInstance.close();
+        };
+
+        this.cancel = () => {
+            $uibModalInstance.close();
+        };
     }
 }
 

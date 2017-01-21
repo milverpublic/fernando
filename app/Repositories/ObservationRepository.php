@@ -12,7 +12,8 @@ class ObservationRepository extends BaseRepository
      */
     protected $fieldSearchable = [
         'title',
-        'body'
+        'body',
+        'control_sheet_id'
     ];
 
     /**

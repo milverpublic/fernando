@@ -23,7 +23,8 @@ class ControlSheet extends Model
     public $fillable = [
         'fecha_tratamiento',
         'tratamiento',
-        'tratamiento_next'
+        'tratamiento_next',
+        'pacient_id'
     ];
 
     /**

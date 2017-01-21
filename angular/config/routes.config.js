@@ -5,6 +5,10 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
 		return `./views/app/pages/${viewName}/${viewName}.page.html`;
 	};
 
+    let getController = (controllerName) => {
+        return `${controllerName}Controller as vm`;
+    };
+
 	$urlRouterProvider.otherwise('/');
 
     /*
@@ -36,7 +40,7 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
             }
         })
         .state('app.controlsheet', {
-            url: '/',
+            url: '/controlsheet/:pacientId',
             views: {
                 'main@': {
                     templateUrl: getView('control-sheet')
@@ -44,10 +48,30 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
             }
         })
         .state('app.controlsheetcreate', {
-            url: '/create',
+            url: '/sheetcreate/:pacientId',
             views: {
                 'main@': {
                     templateUrl: getView('control-sheet-create')
+                }
+            }
+        })
+        .state('app.wizard', {
+            url: '/wizard',
+            views: {
+                'main@': {
+                    templateUrl: getView('steeper-form'),
+                    controller:getController('Steeper'),
+                    controllerAs: 'vm'
+                }
+            }
+        })
+        .state('app.pacients', {
+            url: '/pacients',
+            views: {
+                'main@': {
+                    templateUrl: getView('pacients'),
+                    controller:getController('Pacient'),
+                    controllerAs: 'vm'
                 }
             }
         })

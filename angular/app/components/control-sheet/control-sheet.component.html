@@ -1,10 +1,10 @@
-<a ui-sref="app.controlsheetcreate" class="btn btn-sm btn-success">create</a>
+<a ui-sref="app.controlsheetcreate({pacientId:vm.pacientId})" class="btn btn-sm btn-success">create</a>
 <table st-table="rowCollection" class="table table-striped">
     <thead>
     <tr>
         <th>fecha tratamiento</th>
         <th>tratamiento</th>
-        <th>comentario</th>
+
         <th>tratamiento next</th>
         <th>pacient_id</th>
         <th>revision</th>
@@ -12,25 +12,118 @@
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="row in vm.rowCollection">
+    <tr ng-repeat="row in vm.rowCollection.data">
         <td>{{row.fecha_tratamiento}}</td>
         <td>{{row.tratamiento}}</td>
-        <td>
-            <a class="btn btn-link"><i class="fa fa-lg fa-comment"></i></a>
-            <span class="badge badge-notify">3</span>
-            <a class="btn btn-link"><i class="fa fa-lg fa-paperclip"></i></a>
-            <span class="badge badge-notify">3</span>
-        </td>
         <td>{{row.tratamiento_next}}</td>
         <td>{{row.pacient_id }}</td>
         <td>
             <i class="fa fa-lg fa-{{row.status}}"></i>
         <td>
-            <a class="btn btn-link"><i class="fa fa-lg fa-comment"></i></a>
+            <a class="btn btn-link" ng-click="vm.modalOpenComment('lg',row.id)"><i class="fa fa-lg fa-weixin "></i></a>
             <span class="badge badge-notify">3</span>
-            <a class="btn btn-link"><i class="fa fa-lg fa-paperclip"></i></a>
+            <a class="btn btn-link" ><i class="fa fa-lg fa-paperclip"></i></a>
             <span class="badge badge-notify">3</span>
         </td>
     </tr>
     </tbody>
 </table>
+
+<script type="text/ng-template" id="CommentModalContent.html">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" ng-click="mvm.cancel()" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title">Crear un comentario</h3>
+    </div>
+    <div class="modal-body">
+        <form ng-submit="vm.login()" class="form-horizontal form-group-sm">
+            <fieldset>
+                <div class="form-group">
+                    <label for="title" class="col-sm-2 control-label">Titulo</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="title" ng-model="mvm.comment.title" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="body" class="col-sm-2 control-label">Comentario</label>
+                    <div class="col-sm-10">
+                        <textarea id="body" rows="7" ng-model="mvm.comment.body" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button class="btn btn-success" type="submit" ng-click="mvm.commentCreate()">OK</button>
+                        <button class="btn btn-danger" type="button" ng-click="mvm.cancel()">Cancel</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <!-- Contenedor Principal -->
+        <div class="comments-container">
+            <h4>Comentarios</h4>
+
+            <ul id="comments-list" class="comments-list">
+                <li>
+                    <div class="comment-main-level" ng-repeat="comment in mvm.comments.data">
+                        <!-- Avatar -->
+                        <div class="comment-avatar">
+                            <img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt="">
+                        </div>
+                        <!-- Contenedor del Comentario -->
+                        <div class="comment-box">
+                            <div class="comment-head">
+                                <h6 class="comment-name by-author">Agustin Ortiz</a></h6>
+                                <span>hace 20 minutos</span>
+                                <i class="fa fa-reply"></i>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="comment-content">
+                                <h3>{{comment.title}}</h3>
+                                {{comment.body}}
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Respuestas de los comentarios -->
+                    <ul class="comments-list reply-list">
+                        <li>
+                            <!-- Avatar -->
+                            <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+                            <!-- Contenedor del Comentario -->
+                            <div class="comment-box">
+                                <div class="comment-head">
+                                    <h6 class="comment-name"><a href="http://creaticode.com/blog">Lorena Rojero</a></h6>
+                                    <span>hace 10 minutos</span>
+                                    <i class="fa fa-reply"></i>
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <div class="comment-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <!-- Avatar -->
+                            <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+                            <!-- Contenedor del Comentario -->
+                            <div class="comment-box">
+                                <div class="comment-head">
+                                    <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Agustin Ortiz</a></h6>
+                                    <span>hace 10 minutos</span>
+                                    <i class="fa fa-reply"></i>
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <div class="comment-content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal-footer">
+
+    </div>
+</script>

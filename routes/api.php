@@ -25,13 +25,14 @@ Route::post('auth/password/reset', 'Auth\PasswordResetController@reset');
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:api');
+Route::group(['namespace' => 'API'], function () {
+    Route::resource('people', 'PersonAPIController');
 
-Route::resource('people', 'PersonAPIController');
+    Route::resource('pacients', 'PacientAPIController');
 
-Route::resource('pacients', 'PacientAPIController');
+    Route::resource('control_sheets', 'ControlSheetAPIController');
 
-Route::resource('control_sheets', 'ControlSheetAPIController');
+    Route::resource('observations', 'ObservationAPIController');
 
-Route::resource('observations', 'ObservationAPIController');
-
-Route::resource('attachments', 'AttachmentAPIController');
+    Route::resource('attachments', 'AttachmentAPIController');
+});

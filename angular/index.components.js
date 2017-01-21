@@ -1,3 +1,4 @@
+import {SteeperFormComponent} from './app/components/steeper-form/steeper-form.component';
 import {ControlSheetFormComponent} from './app/components/control-sheet-form/control-sheet-form.component';
 import {ControlSheetComponent} from './app/components/control-sheet/control-sheet.component';
 import {AppHeaderComponent} from './app/components/app-header/app-header.component';
@@ -9,6 +10,7 @@ import {LoginFormComponent} from './app/components/login-form/login-form.compone
 import {RegisterFormComponent} from './app/components/register-form/register-form.component';
 
 angular.module('app.components')
+	.component('steeperForm', SteeperFormComponent)
 	.component('controlSheetForm', ControlSheetFormComponent)
 	.component('controlSheet', ControlSheetComponent)
 	.component('appHeader', AppHeaderComponent)
