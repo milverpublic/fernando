@@ -14,9 +14,11 @@ class CreatePacientsTable extends Migration
     public function up()
     {
         Schema::create('pacients', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('derivadoPor');
-            $table->string('motivoConsulta');
+            $table->increments('id')->unsigned();
+            $table->integer('people_id')->unsigned();
+            $table->foreign('people_id')->references('id')->on('people')->onDelete('cascade');
+            $table->string('derivado_por');
+            $table->string('motivo_consulta');
             $table->timestamps();
             $table->softDeletes();
         });

@@ -11,8 +11,8 @@ class PacientRepository extends BaseRepository
      * @var array
      */
     protected $fieldSearchable = [
-        'derivadoPor',
-        'motivoConsulta'
+        'derivado_por',
+        'motivo_consulta'
     ];
 
     /**

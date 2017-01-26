@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Eloquent as Model;
+use \Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
@@ -22,7 +22,7 @@ class Person extends Model
 
     public $fillable = [
         'name',
-        'lastName',
+        'last_name',
         'address',
         'age',
         'gender'
@@ -35,7 +35,7 @@ class Person extends Model
      */
     protected $casts = [
         'name' => 'string',
-        'lastName' => 'string',
+        'last_name' => 'string',
         'address' => 'string',
         'age' => 'integer',
         'gender' => 'string'
@@ -51,5 +51,11 @@ class Person extends Model
         'gender' => 'required'
     ];
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function pacient(){
+        return $this->hasOne('App\Models\Pacient', 'people_id', 'id');
+    }
     
 }

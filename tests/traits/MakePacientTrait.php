@@ -42,8 +42,8 @@ trait MakePacientTrait
         $fake = Faker::create();
 
         return array_merge([
-            'derivadoPor' => $fake->word,
-            'motivoConsulta' => $fake->word,
+            'derivado_por' => $fake->word,
+            'motivo_consulta' => $fake->word,
             'created_at' => $fake->word,
             'updated_at' => $fake->word
         ], $pacientFields);

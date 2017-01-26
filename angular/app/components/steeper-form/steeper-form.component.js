@@ -1,14 +1,16 @@
 class SteeperFormController{
-    constructor($log,ToastService,API,$state){
+    constructor($log,ToastService,API,$state,$auth){
         'ngInject';
         this.$log=$log;
         this.ToastService=ToastService;
         this.API=API;
         this.$state=$state;
+        this.$auth=$auth;
         this.pacient=null;
     }
 
     $onInit(){
+        this.$log.debug(this.$auth.getToken());
     }
     savePacient(){
         this.$log.debug("beging...");

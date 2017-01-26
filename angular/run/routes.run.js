@@ -1,11 +1,11 @@
-export function RoutesRun($state, $transitions) {
+export function RoutesRun($state, $transitions,$auth) {
     'ngInject';
 
     let requiresAuthCriteria = {
         to: ($state) => $state.data && $state.data.auth
     };
 
-    let redirectToLogin = ($auth) => {
+    let redirectToLogin = () => {
         'ngInject';
         if (!$auth.isAuthenticated()) {
             return $state.target('app.login', undefined, {location: false});

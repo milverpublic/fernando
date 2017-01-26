@@ -12,7 +12,7 @@ class PersonRepository extends BaseRepository
      */
     protected $fieldSearchable = [
         'name',
-        'lastName',
+        'last_name',
         'address',
         'age',
         'gender'

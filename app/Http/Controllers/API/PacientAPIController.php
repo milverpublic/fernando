@@ -6,6 +6,7 @@ use App\Http\Requests\API\CreatePacientAPIRequest;
 use App\Http\Requests\API\UpdatePacientAPIRequest;
 use App\Models\Pacient;
 use App\Repositories\PacientRepository;
+use App\Repositories\PersonRepository;
 use Illuminate\Http\Request;
 use App\Http\Controllers\AppBaseController;
 use InfyOm\Generator\Criteria\LimitOffsetCriteria;
@@ -22,9 +23,11 @@ class PacientAPIController extends AppBaseController
     /** @var  PacientRepository */
     private $pacientRepository;
 
-    public function __construct(PacientRepository $pacientRepo)
-    {
+    private $personRepository;
+
+    public function __construct(PacientRepository $pacientRepo,PersonRepository $personRepo){
         $this->pacientRepository = $pacientRepo;
+        $this->personRepository=$personRepo;
     }
 
     /**
@@ -38,7 +41,7 @@ class PacientAPIController extends AppBaseController
     {
         $this->pacientRepository->pushCriteria(new RequestCriteria($request));
         $this->pacientRepository->pushCriteria(new LimitOffsetCriteria($request));
-        $pacients = $this->pacientRepository->all();
+        $pacients = $this->pacientRepository->has("person")->all();
 
         return $this->sendResponse($pacients->toArray(), 'Pacients retrieved successfully');
     }
@@ -54,8 +57,8 @@ class PacientAPIController extends AppBaseController
     public function store(CreatePacientAPIRequest $request)
     {
         $input = $request->all();
-
-        $pacients = $this->pacientRepository->create($input);
+        $person = $this->personRepository->create($input);
+        $pacients = $person->pacient()->create($input);
 
         return $this->sendResponse($pacients->toArray(), 'Pacient saved successfully');
     }

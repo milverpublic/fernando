@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Eloquent as Model;
+use \Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
@@ -21,8 +21,8 @@ class Pacient extends Model
 
 
     public $fillable = [
-        'derivadoPor',
-        'motivoConsulta'
+        'derivado_por',
+        'motivo_consulta'
     ];
 
     /**
@@ -31,8 +31,8 @@ class Pacient extends Model
      * @var array
      */
     protected $casts = [
-        'derivadoPor' => 'string',
-        'motivoConsulta' => 'string'
+        'derivado_por' => 'string',
+        'motivo_consulta' => 'string'
     ];
 
     /**
@@ -41,9 +41,15 @@ class Pacient extends Model
      * @var array
      */
     public static $rules = [
-        'derivadoPor' => 'required',
-        'motivoConsulta' => 'required'
+        'derivado_por' => 'required',
+        'motivo_consulta' => 'required'
     ];
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function person(){
+        return $this->belongsTo('App\Models\Person', 'people_id', 'id')->select(["name"]);
+    }
     
 }

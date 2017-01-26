@@ -41,6 +41,7 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
         })
         .state('app.controlsheet', {
             url: '/controlsheet/:pacientId',
+            data: {auth: true},
             views: {
                 'main@': {
                     templateUrl: getView('control-sheet')
@@ -49,6 +50,7 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
         })
         .state('app.controlsheetcreate', {
             url: '/sheetcreate/:pacientId',
+            data: {auth: true},
             views: {
                 'main@': {
                     templateUrl: getView('control-sheet-create')
@@ -57,6 +59,7 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
         })
         .state('app.wizard', {
             url: '/wizard',
+            data: {auth: true},
             views: {
                 'main@': {
                     templateUrl: getView('steeper-form'),
@@ -67,6 +70,7 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
         })
         .state('app.pacients', {
             url: '/pacients',
+            data: {auth: true},
             views: {
                 'main@': {
                     templateUrl: getView('pacients'),

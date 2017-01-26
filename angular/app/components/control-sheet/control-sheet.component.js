@@ -23,7 +23,7 @@ class ControlSheetController{
             vm.rowCollection=data;
         });
     }
-    commentSave(comment,id){
+    commentSave(comment){
         let vm=this;
         this.API.all('observations').post(comment).then(function (data) {
             vm.ToastService.show(data.message);
@@ -58,8 +58,7 @@ class ControlSheetController{
         };
         this.comments=comments;
         this.commentCreate = () => {
-            console.log(this.comment);
-            vm.commentSave(this.comment,id);
+            vm.commentSave(this.comment);
             $uibModalInstance.close();
         };
 
