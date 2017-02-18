@@ -1,0 +1,105 @@
+<form ng-submit="vm.saveInfoPacient()" class="form-horizontal form-group-sm">
+    <fieldset ng-repeat="form in vm.form.data">
+        <legend>{{form.name_section}}</legend>
+        <div class="form-group" ng-repeat="question in form.questions">
+            <label for="{{question.model}}Id" class="col-sm-3 control-label">{{question.name}}</label>
+            <div class="col-sm-9">
+
+                <textarea ng-model="vm.response[question.model]"
+                          ng-if="question.input_type=='textarea'"
+                          class="form-control"></textarea>
+
+                <div ng-if="(question.input_type=='checkbox') && (question.model=='question7')">
+                    <label class="checkbox-inline checkbox checkbox-primary">
+                        <input type="checkbox" ng-model="vm.response[question.model].checkbox1" ng-value="Asma"> Asma
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" ng-model="vm.response[question.model].checkbox2" ng-value="Diabetes"> Diabetes
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" ng-model="vm.response[question.model].checkbox3"> Hepatitis
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" ng-model="vm.response[question.model].checkbox4"> Enfermedades Cardiacas
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" ng-model="vm.response[question.model].checkbox5"> Anemia
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" ng-model="vm.response[question.model].checkbox6"> Fiebre reumatica
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" ng-model="vm.response[question.model].checkbox7"> Enfermedades sanguineas
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" ng-model="vm.response[question.model].checkbox8"> Epilepsia
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" ng-model="vm.response[question.model].checkbox9"> Transtornos oseos
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" ng-model="vm.response[question.model].checkbox10"> Transtornos auditivos
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" ng-model="vm.response[question.model].checkbox11"> Danio craneo faceal
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" ng-model="vm.response[question.model].checkbox12"> Otros
+                    </label>
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question9')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response[question.model]" id="inlineRadio1" value="NO"> No
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response[question.model]" id="inlineRadio2" value="YES"> Si
+                    </label>
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question12' || question.model=='question13' || question.model=='question14' || question.model=='question15' || question.model=='question16' || question.model=='question18' || question.model=='question22')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response[question.model]" value="NO"> No
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response[question.model]" value="YES"> Si
+                    </label>
+                </div>
+                <input type="text"
+                       id="{{question.model}}Id"
+                       ng-model="vm.response[question.model]"
+                       placeholder="{{question.name}}"
+                       ng-if="question.input_type=='text'"
+                       class="form-control">
+                <div ng-if="(question.input_type=='checkbox') && (question.model=='question25')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response[question.model]" value="PACIENTE"> Paciente
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response[question.model]" value="ODONTOLOGO"> Odontologo
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response[question.model]" value="FAMILIAR"> Familiar
+                    </label>
+                </div>
+                <div ng-if="(question.input_type=='checkbox') && (question.model=='question26')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response[question.model]" value="Quiere el Tx"> Quiere el Tx
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response[question.model]" value="Tx. Necesario"> Tx. Necesario
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response[question.model]" value="No quiere"> No quiere
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response[question.model]" value="No coopera"> No coopera
+                    </label>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+            <button type="submit" class="btn btn-success">Guardar</button>
+        </div>
+    </div>
+</form>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API;
 use App\Http\Requests\API\CreatePacientAPIRequest;
 use App\Http\Requests\API\UpdatePacientAPIRequest;
 use App\Models\Pacient;
+use App\Models\Person;
 use App\Repositories\PacientRepository;
 use App\Repositories\PersonRepository;
 use Illuminate\Http\Request;
@@ -41,7 +42,7 @@ class PacientAPIController extends AppBaseController
     {
         $this->pacientRepository->pushCriteria(new RequestCriteria($request));
         $this->pacientRepository->pushCriteria(new LimitOffsetCriteria($request));
-        $pacients = $this->pacientRepository->has("person")->all();
+        $pacients = $this->personRepository->with('pacient')->all();
 
         return $this->sendResponse($pacients->toArray(), 'Pacients retrieved successfully');
     }

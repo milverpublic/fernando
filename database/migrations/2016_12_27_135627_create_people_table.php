@@ -18,7 +18,7 @@ class CreatePeopleTable extends Migration
             $table->string('name');
             $table->string('last_name')->nullable();
             $table->string('address')->nullable();
-            $table->integer('age');
+            $table->date('age');
             $table->string('gender');
             $table->timestamps();
             $table->softDeletes();

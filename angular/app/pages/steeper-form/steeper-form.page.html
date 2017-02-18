@@ -1,1 +1,24 @@
-<steeper-form></steeper-form>
+<div class="wizard">
+    <div class="wizard-inner">
+        <div class="connecting-line"></div>
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="text-center" ng-repeat="section in vm.sections.data">
+                <a ui-sref="app.pacient({steep:'{{section.route}}'})" title="{{section.name_section}}"
+                   ng-click="vm.setProperties(123456)">
+                            <span class="round-tab">
+                                <i class="{{section.icon}}"></i>
+                            </span>
+                </a>
+                <p class="title-section">{{section.name_section}}</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="col-md-8 col-sm-offset-2" ng-switch="vm.$stateParams.steep">
+    <steeper-form ng-switch-when="section1"></steeper-form>
+    <summary-general ng-switch-when="section2"></summary-general>
+    <info-pacient ng-switch-when="section3"></info-pacient>
+    <exam-clinic ng-switch-when="section4"></exam-clinic>
+    <steeper-form ng-switch-default></steeper-form>
+</div>
+

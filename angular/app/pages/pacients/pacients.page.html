@@ -2,15 +2,17 @@
 <table class="table table-striped">
     <thead>
     <tr>
-        <th>Derivado Por</th>
-        <th>Motivo Consulta</th>
+        <th>Paciente</th>
+        <th>Derivado por</th>
+        <th>Motivo</th>
         <th>comentario</th>
     </tr>
     </thead>
     <tbody>
     <tr ng-repeat="row in vm.pacients.data">
-        <td>{{row.derivado_por}}</td>
-        <td>{{row.motivo_consulta}}</td>
+        <td>{{row.name}} {{row.last_name}}</td>
+        <td>{{row.pacient.derivado_por}}</td>
+        <td>{{row.pacient.motivo_consulta}}</td>
         <td>
             <a ui-sref="app.controlsheet({pacientId:row.id})" class="btn btn-link"><i class="fa fa-lg fa-list-alt "></i></a>
         </td>

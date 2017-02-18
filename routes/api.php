@@ -35,4 +35,17 @@ Route::group(['namespace' => 'API'], function () {
     Route::resource('observations', 'ObservationAPIController');
 
     Route::resource('attachments', 'AttachmentAPIController');
+
+    Route::resource('history_clinics', 'HistoryClinicAPIController');
+
+    Route::resource('sections', 'SectionAPIController');
+    Route::get('section','SectionAPIController@sections');
+    Route::get('questionsforms/{id}','SectionAPIController@questions');
+
+    Route::resource('questions', 'QuestionAPIController');
+
+    Route::resource('response_questions', 'ResponseQuestionAPIController');
+
+
+
 });

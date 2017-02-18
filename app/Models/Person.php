@@ -37,7 +37,7 @@ class Person extends Model
         'name' => 'string',
         'last_name' => 'string',
         'address' => 'string',
-        'age' => 'integer',
+        'age' => 'date',
         'gender' => 'string'
     ];
 

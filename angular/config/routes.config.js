@@ -57,8 +57,8 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
                 }
             }
         })
-        .state('app.wizard', {
-            url: '/wizard',
+        .state('app.pacient', {
+            url: '/steeper/:steep',
             data: {auth: true},
             views: {
                 'main@': {
