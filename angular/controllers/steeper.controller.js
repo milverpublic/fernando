@@ -17,18 +17,17 @@ export class SteeperController{
 
     $onInit(){
         let vm=this;
-        this.$log.debug(this.FunctionsService.getParams());
-        this.API.one('section').get({'pacient_id':this.$stateParams.pacientId}).then(function (data) {
-            vm.sections=data;
+        this.API.one('section').get().then(function (response) {
+            vm.sections=response;
         });
     }
-    setProperties(number){
-        this.FunctionsService.setParams(number);
+    changeSection(section){
+        this.$state.go('app.pacient',{steep:section});
     }
     savePacient(){
         let vm=this;
-        this.API.all('pacients').post(this.pacient).then(function (data) {
-            vm.ToastService.show(data.message);
+        this.API.all('pacients').post(this.pacient).then(function (response) {
+            vm.ToastService.show(response.message);
             vm.$state.go('app.pacients');
         });
     }

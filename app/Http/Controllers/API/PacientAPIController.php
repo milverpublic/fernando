@@ -5,7 +5,8 @@ namespace App\Http\Controllers\API;
 use App\Http\Requests\API\CreatePacientAPIRequest;
 use App\Http\Requests\API\UpdatePacientAPIRequest;
 use App\Models\Pacient;
-use App\Models\Person;
+use Auth;
+use App\Repositories\HistoryClinicRepository;
 use App\Repositories\PacientRepository;
 use App\Repositories\PersonRepository;
 use Illuminate\Http\Request;
@@ -24,11 +25,17 @@ class PacientAPIController extends AppBaseController
     /** @var  PacientRepository */
     private $pacientRepository;
 
+    /** @var PersonRepository */
     private $personRepository;
 
-    public function __construct(PacientRepository $pacientRepo,PersonRepository $personRepo){
+    /** @var HistoryClinicRepository
+     */
+    private $historyClinicRepository;
+
+    public function __construct(PacientRepository $pacientRepo,PersonRepository $personRepo, HistoryClinicRepository $historyClinicRepo){
         $this->pacientRepository = $pacientRepo;
         $this->personRepository=$personRepo;
+        $this->historyClinicRepository=$historyClinicRepo;
     }
 
     /**
@@ -42,9 +49,14 @@ class PacientAPIController extends AppBaseController
     {
         $this->pacientRepository->pushCriteria(new RequestCriteria($request));
         $this->pacientRepository->pushCriteria(new LimitOffsetCriteria($request));
-        $pacients = $this->personRepository->with('pacient')->all();
-
-        return $this->sendResponse($pacients->toArray(), 'Pacients retrieved successfully');
+        $persons = $this->personRepository->paginate(5);
+        foreach ($persons as $person){
+            $pacient = $this->pacientRepository->findWhere(['people_id' => $person->id])->first();
+            $history_clinic=$this->historyClinicRepository->findWhere(['pacient_id' => $person->id])->first();
+            $pacient->history_clinic=$history_clinic;
+            $person->pacient=$pacient;
+        }
+        return $this->sendResponse($persons->toArray(), 'Pacients retrieved successfully');
     }
 
     /**
@@ -59,9 +71,12 @@ class PacientAPIController extends AppBaseController
     {
         $input = $request->all();
         $person = $this->personRepository->create($input);
-        $pacients = $person->pacient()->create($input);
-
-        return $this->sendResponse($pacients->toArray(), 'Pacient saved successfully');
+        $pacient = $person->pacient()->create($input['pacient']);
+        $user = Auth::user();
+        $historyClinic=$pacient->historyClinic()->create(['actualizado_por' => $user->name]);
+        $pacient->history_clinic=$historyClinic;
+        $person->pacient=$pacient;
+        return $this->sendResponse($person->toArray(), 'Pacient saved successfully');
     }
 
     /**
@@ -75,13 +90,16 @@ class PacientAPIController extends AppBaseController
     public function show($id)
     {
         /** @var Pacient $pacient */
-        $pacient = $this->pacientRepository->findWithoutFail($id);
+        $person = $this->personRepository->findWithoutFail($id);
 
-        if (empty($pacient)) {
+        if (empty($person)) {
             return $this->sendError('Pacient not found');
         }
+        $pacient=$this->pacientRepository->findWhere(['people_id' => $person->id])->first();
 
-        return $this->sendResponse($pacient->toArray(), 'Pacient retrieved successfully');
+        $person->pacient=$pacient;
+
+        return $this->sendResponse($person->toArray(), 'Pacient retrieved successfully');
     }
 
     /**
@@ -97,16 +115,13 @@ class PacientAPIController extends AppBaseController
     {
         $input = $request->all();
 
+        $person = $this->personRepository->update($input,$id);
         /** @var Pacient $pacient */
-        $pacient = $this->pacientRepository->findWithoutFail($id);
+        $pacient = $this->pacientRepository->update(json_decode($input['pacient'], true),$input['id']);
 
-        if (empty($pacient)) {
-            return $this->sendError('Pacient not found');
-        }
+        $person->pacient=$pacient;
 
-        $pacient = $this->pacientRepository->update($input, $id);
-
-        return $this->sendResponse($pacient->toArray(), 'Pacient updated successfully');
+        return $this->sendResponse($person->toArray(), 'Pacient updated successfully');
     }
 
     /**

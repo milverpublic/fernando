@@ -1,0 +1,382 @@
+<form ng-submit="vm.saveExamClinic()" class="form-horizontal form-group-sm">
+    <fieldset ng-repeat="form in vm.form.data">
+        <legend>{{form.name_section}}</legend>
+        <div class="form-group" ng-repeat="question in form.questions">
+            <label for="{{question.model}}Id" class="col-sm-3 control-label">{{question.name}}</label>
+            <div class="col-sm-9">
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question29')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio1" value="SIMETRICA"> Simetrica
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio2" value="ASIMETRICA"> Asimetrica
+                    </label>
+                </div>
+
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question31')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio311" value="CONCAVO"> Concavo
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio312" value="CONVEXO"> Convexo
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio313" value="RECTO"> Recto
+                    </label>
+                </div>
+
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question32')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio321" value="RETROGNATICO"> Retrognatico
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio322" value="ORTOGNATICO"> Ortognatico
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio323" value="PROGNATICO"> Prognatico
+                    </label>
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question33')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio331" value="CORTO"> Corto
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio332" value="NORMAL"> Normal
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio333" value="LARGO"> Largo
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio334" value="PROTOSIVO"> Protosivo
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio336" value="RETROSIVO"> Retrosivo
+                    </label>
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question34')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio341" value="CORTO"> Corto
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio342" value="NORMAL"> Normal
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio343" value="LARGO"> Largo
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio344" value="PROTOSIVO"> Protosivo
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio346" value="RETROSIVO"> Retrosivo
+                    </label>
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question35')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio351" value="PRONUNCIADO"> Pronunciado
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio352" value="NORMAL"> Normal
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio353" value="NO EXISTE"> Np existe
+                    </label>
+
+                </div>
+
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question36')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio361" value="JUNTOS"> Juntos
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio362" value="SEPARADOS"> Separados
+                    </label>
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question37')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio371" value="NORMAL"> Normal
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio372" value="NO CIERRA"> No cierra
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio373" value="CON TENSION"> Con tension
+                    </label>
+
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question38')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio381" value="GRANDE"> Grande
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio382" value="NORMAL"> Normal
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio383" value="PEQUENA"> Pequenia
+                    </label>
+
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question39')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio391" value="NASAL"> Nasal
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio392" value="BUCAL"> Bucal
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio393" value="MIXTA"> Mixta
+                    </label>
+
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question40')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio401" value="NORMAL"> Normal
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio402" value="ATIPICA CON DIENTES JUNTOS"> Atipica con dientes juntos
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio403" value="ATIPICA CON DIENTES SEPARADOS"> Atipica con dientes separados
+                    </label>
+
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question41')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio411" value="NORMAL"> Normal
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio412" value="DEFECTUOSA"> Defectuosa
+                    </label>
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question44')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio441" value="SANAS"> Sanas
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio442" value="INFLAMADAS"> Inflamadas
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio443" value="SANGRANTES"> Sangrantes
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio444" value="HIPERTROFICAS"> Hipertroficas
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio445" value="RECESIVAS"> Recesivas
+                    </label>
+
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question45')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio451" value="GRANDE"> Grande
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio452" value="NORMAL"> Normal
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio453" value="PEQUENA"> Pequenia
+                    </label>
+
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question46')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio461" value="NORMAL"> Normal
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio462" value="CORTO"> Corto
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio463" value="AUSENTE"> Ausente
+                    </label>
+
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question47')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio471" value="NORMAL"> Normal
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio472" value="GRUESO"> Grueso
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio473" value="CORTO"> Corto
+                    </label>
+
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question48')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio481" value="GRANDES"> Grandes
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio482" value="PEQUENAS"> Pequenias
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio483" value="EXTIRPADAS"> Exterpidas
+                    </label>
+
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question49')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio491" value="MUCHAS"> Muchas
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio492" value="MODERADAS"> Moderadas
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio493" value="POCAS"> Pocas
+                    </label>
+
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question50')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio501" value="BUENA"> Buena
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio502" value="REGULAR"> Regular
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio503" value="POBRE"> Pobre
+                    </label>
+
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question51')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio511" value="SUPERIOR"> Superior
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio512" value="INFERIOR"> Inferior
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio513" value="NINGUNO"> Ninguno
+                    </label>
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question52')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio521" value="PRIMARIA"> Primaria
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio522" value="MIXTA"> Mixta
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio523" value="PERMANENTE"> Permanente
+                    </label>
+
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question53')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio531" value="AUMENTADO"> Aumentado
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio532" value="DISMINUIDO"> Disminuido
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio533" value="NORMAL"> Normal
+                    </label>
+
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question54')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio541" value="AUMENTADO"> Aumentado
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio542" value="DISMINUIDO"> Disminuido
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio543" value="NORMAL"> Normal
+                    </label>
+
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio534" value="BORDE A BORDE"> Borde a borde
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio535" value="MORDIDA CRUZADA ANTERIOR"> Mordida cruzada anterior
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio536" value="MORDIDA ABIERTA ANTERIOR"> Mordida abierta anterior
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio537" value="MORDIDA PROFUNDA"> Mordida profunda
+                    </label>
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question55')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio551" value="SI"> Si
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio552" value="NO"> No
+                    </label>
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question56')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio561" value="SI"> Si
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio562" value="NO"> No
+                    </label>
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question57')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio571" value="NO"> No
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio572" value="LEVE"> Leve
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio573" value="MODERADO"> Moderado
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio574" value="GRAVE"> Grave
+                    </label>
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question58')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio581" value="NO"> No
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio582" value="LEVE"> Leve
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio583" value="MODERADO"> Moderado
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio584" value="GRAVE"> Grave
+                    </label>
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question59')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio591" value="NORMAL"> Normal
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio592" value="BAJO"> Bajo
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio593" value="PROFUNDO"> Profundo
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio594" value="OJIVAL"> Ojival
+                    </label>
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question60' || question.model=='question61')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio601" value="CORRECTA"> Correcta
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio602" value="DESVIADA"> Desviada
+                    </label>
+                </div>
+                <input type="text"
+                       id="{{question.model}}Id"
+                       ng-model="vm.response.question[question.model]"
+                       placeholder="{{question.name}}"
+                       ng-if="question.input_type=='text'"
+                       class="form-control">
+
+            </div>
+        </div>
+    </fieldset>
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+            <button type="submit" class="btn btn-success">Guardar</button>
+        </div>
+    </div>
+</form>

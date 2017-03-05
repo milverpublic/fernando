@@ -44,5 +44,7 @@ class HistoryClinic extends Model
         'pacient_id' => 'required'
     ];
 
-    
+    public function pacient(){
+        return $this->belongsTo('App\Models\Pecient', 'pacient_id', 'id');
+    }
 }

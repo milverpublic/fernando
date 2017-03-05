@@ -23,7 +23,8 @@ class ResponseQuestion extends Model
     public $fillable = [
         'history_clinic_id',
         'question_id',
-        'reponse_value'
+        'reponse_value',
+        'multiple'
     ];
 
     /**
@@ -34,7 +35,8 @@ class ResponseQuestion extends Model
     protected $casts = [
         'history_clinic_id' => 'integer',
         'question_id' => 'integer',
-        'reponse_value' => 'string'
+        'reponse_value' => 'string',
+        'multiple' => 'array'
     ];
 
     /**
@@ -44,7 +46,6 @@ class ResponseQuestion extends Model
      */
     public static $rules = [
         'history_clinic_id' => 'required',
-        'question_id' => 'required'
     ];
 
     

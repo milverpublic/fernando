@@ -1,13 +1,17 @@
 export class APIService {
-	constructor(Restangular, ToastService, $window) {
+	constructor(Restangular, ToastService, $window,blockUI,blockUIConfig) {
 		'ngInject';
 		//content negotiation
+        var blockUI=blockUI;
+        blockUIConfig.delay = 100;
+        blockUIConfig.message = 'Cargando...';
 		let headers = {
 			'Content-Type': 'application/json',
 			'Accept': 'application/x.laravel.v1+json'
 		};
 
 		return Restangular.withConfig(function(RestangularConfigurer) {
+			let vm=this;
 			RestangularConfigurer
 				.setBaseUrl('/api/')
 				.setDefaultHeaders(headers)
@@ -26,7 +30,15 @@ export class APIService {
 					if (token) {
 						headers.Authorization = 'Bearer ' + token;
 					}
+                    blockUI.start();
+					console.log('aaaaaa');
 				})
+                .addResponseInterceptor(function (response, operation, what) {
+                    console.log('bbbbbb');
+                    blockUI.stop();
+                    return response
+
+                })
 		});
 	}
 }

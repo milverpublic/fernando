@@ -1,19 +1,26 @@
 class AppHeaderController{
-    constructor($sce,$log,$auth,$state){
+    constructor($sce,$log,$auth,$state,API){
         'ngInject';
         this.$auth=$auth;
         this.$state=$state;
+        this.API=API;
         this.$log=$log;
         this.$sce = $sce;
+        this.profile=null;
     }
 
     $onInit(){
         this.isCollapsed=true;
-        this.$log.debug(this.$auth.isAuthenticated());
+        let vm=this;
+        if (this.$auth.isAuthenticated()){
+            this.API.one('me').get().then(function (data) {
+                vm.profile=data.data;
+            });
+        }
     }
     logout(){
         this.$auth.logout();
-        this.$state.go('app.landing');
+        this.$state.go('app.landing',{},{reload: true});
     }
 }
 

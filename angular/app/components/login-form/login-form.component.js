@@ -23,7 +23,7 @@ class LoginFormController {
 				this.$auth.setToken(response.data);
 
 				this.ToastService.show('Logged in successfully.');
-                this.$state.go('app.landing');
+                this.$state.go('app.landing',{},{reload: true});
 			})
 			.catch(this.failedLogin.bind(this));
 	}

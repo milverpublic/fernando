@@ -1,4 +1,4 @@
-import {FunctionsService} from './services/Functions.service';
+import {FunctionsService} from './services/functions.service';
 import {APIService} from './services/API.service';
 import {DialogService} from './services/dialog.service';
 import {ToastService} from './services/toast.service';

@@ -41,6 +41,11 @@ Elixir.extend('bower', function(jsOutputFile, jsOutputFolder, cssOutputFile, css
                     main: [
                         './dist/jquery.js'
                     ]
+                },
+                "ng-flat-datepicker":{
+                    main:[
+                        './dist/ng-flat-datepicker.js'
+                    ]
                 }
             }
         }))
@@ -69,6 +74,11 @@ Elixir.extend('bower', function(jsOutputFile, jsOutputFolder, cssOutputFile, css
                 "angular-bootstrap":{
                     main: [
                         'ui-bootstrap-csp.css'
+                    ]
+                },
+                "ng-flat-datepicker":{
+                    main: [
+                        './dist/ng-flat-datepicker.css'
                     ]
                 }
             }

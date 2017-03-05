@@ -5,93 +5,93 @@
             <label for="{{question.model}}Id" class="col-sm-3 control-label">{{question.name}}</label>
             <div class="col-sm-9">
 
-                <textarea ng-model="vm.response[question.model]"
+                <textarea ng-model="vm.response.question[question.model]"
                           ng-if="question.input_type=='textarea'"
                           class="form-control"></textarea>
 
                 <div ng-if="(question.input_type=='checkbox') && (question.model=='question7')">
                     <label class="checkbox-inline checkbox checkbox-primary">
-                        <input type="checkbox" ng-model="vm.response[question.model].checkbox1" ng-value="Asma"> Asma
+                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox1" ng-value="Asma"> Asma
                     </label>
                     <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response[question.model].checkbox2" ng-value="Diabetes"> Diabetes
+                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox2" ng-value="Diabetes"> Diabetes
                     </label>
                     <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response[question.model].checkbox3"> Hepatitis
+                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox3"> Hepatitis
                     </label>
                     <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response[question.model].checkbox4"> Enfermedades Cardiacas
+                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox4"> Enfermedades Cardiacas
                     </label>
                     <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response[question.model].checkbox5"> Anemia
+                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox5"> Anemia
                     </label>
                     <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response[question.model].checkbox6"> Fiebre reumatica
+                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox6"> Fiebre reumatica
                     </label>
                     <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response[question.model].checkbox7"> Enfermedades sanguineas
+                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox7"> Enfermedades sanguineas
                     </label>
                     <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response[question.model].checkbox8"> Epilepsia
+                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox8"> Epilepsia
                     </label>
                     <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response[question.model].checkbox9"> Transtornos oseos
+                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox9"> Transtornos oseos
                     </label>
                     <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response[question.model].checkbox10"> Transtornos auditivos
+                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox10"> Transtornos auditivos
                     </label>
                     <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response[question.model].checkbox11"> Danio craneo faceal
+                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox11"> Danio craneo faceal
                     </label>
                     <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response[question.model].checkbox12"> Otros
+                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox12"> Otros
                     </label>
                 </div>
                 <div ng-if="(question.input_type=='radiobutton') && (question.model=='question9')">
                     <label class="radio-inline">
-                        <input type="radio" ng-model="vm.response[question.model]" id="inlineRadio1" value="NO"> No
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio1" value="NO"> No
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" ng-model="vm.response[question.model]" id="inlineRadio2" value="YES"> Si
+                        <input type="radio" ng-model="vm.response.question[question.model]" id="inlineRadio2" value="YES"> Si
                     </label>
                 </div>
                 <div ng-if="(question.input_type=='radiobutton') && (question.model=='question12' || question.model=='question13' || question.model=='question14' || question.model=='question15' || question.model=='question16' || question.model=='question18' || question.model=='question22')">
                     <label class="radio-inline">
-                        <input type="radio" ng-model="vm.response[question.model]" value="NO"> No
+                        <input type="radio" ng-model="vm.response.question[question.model]" value="NO"> No
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" ng-model="vm.response[question.model]" value="YES"> Si
+                        <input type="radio" ng-model="vm.response.question[question.model]" value="YES"> Si
                     </label>
                 </div>
                 <input type="text"
                        id="{{question.model}}Id"
-                       ng-model="vm.response[question.model]"
+                       ng-model="vm.response.question[question.model]"
                        placeholder="{{question.name}}"
                        ng-if="question.input_type=='text'"
                        class="form-control">
                 <div ng-if="(question.input_type=='checkbox') && (question.model=='question25')">
                     <label class="radio-inline">
-                        <input type="radio" ng-model="vm.response[question.model]" value="PACIENTE"> Paciente
+                        <input type="radio" ng-model="vm.response.question[question.model]" value="PACIENTE"> Paciente
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" ng-model="vm.response[question.model]" value="ODONTOLOGO"> Odontologo
+                        <input type="radio" ng-model="vm.response.question[question.model]" value="ODONTOLOGO"> Odontologo
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" ng-model="vm.response[question.model]" value="FAMILIAR"> Familiar
+                        <input type="radio" ng-model="vm.response.question[question.model]" value="FAMILIAR"> Familiar
                     </label>
                 </div>
                 <div ng-if="(question.input_type=='checkbox') && (question.model=='question26')">
                     <label class="radio-inline">
-                        <input type="radio" ng-model="vm.response[question.model]" value="Quiere el Tx"> Quiere el Tx
+                        <input type="radio" ng-model="vm.response.question[question.model]" value="Quiere el Tx"> Quiere el Tx
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" ng-model="vm.response[question.model]" value="Tx. Necesario"> Tx. Necesario
+                        <input type="radio" ng-model="vm.response.question[question.model]" value="Tx. Necesario"> Tx. Necesario
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" ng-model="vm.response[question.model]" value="No quiere"> No quiere
+                        <input type="radio" ng-model="vm.response.question[question.model]" value="No quiere"> No quiere
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" ng-model="vm.response[question.model]" value="No coopera"> No coopera
+                        <input type="radio" ng-model="vm.response.question[question.model]" value="No coopera"> No coopera
                     </label>
                 </div>
             </div>

@@ -1,66 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ca78dd4-36d8-454b-b12c-624970707e88" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/HistoryClinicAPIController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/QuestionAPIController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/SectionAPIController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/API/CreateHistoryClinicAPIRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/API/CreateQuestionAPIRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/API/CreateResponseQuestionAPIRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/API/CreateSectionAPIRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/API/UpdateHistoryClinicAPIRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/API/UpdateQuestionAPIRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/API/UpdateResponseQuestionAPIRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/API/UpdateSectionAPIRequest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Models/HistoryClinic.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Models/Question.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Models/ResponseQuestion.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Models/Section.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Repositories/HistoryClinicRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Repositories/QuestionRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Repositories/ResponseQuestionRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Repositories/SectionRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2017_01_31_032520_create_history_clinics_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2017_01_31_033311_create_sections_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2017_01_31_033625_create_questions_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2017_02_05_031325_create_response_questions_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/seeds/QuestionsTableSeeder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/seeds/SectionsTableSeeder.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/HistoryClinicApiTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/HistoryClinicRepositoryTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/QuestionApiTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/QuestionRepositoryTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/ResponseQuestionApiTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/ResponseQuestionRepositoryTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/SectionApiTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/SectionRepositoryTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/traits/MakeHistoryClinicTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/traits/MakeQuestionTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/traits/MakeResponseQuestionTrait.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/traits/MakeSectionTrait.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/bbda30a4-ae6b-4308-9e92-5bcb6e8ace02/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/bbda30a4-ae6b-4308-9e92-5bcb6e8ace02/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/bbda30a4-ae6b-4308-9e92-5bcb6e8ace02/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/bbda30a4-ae6b-4308-9e92-5bcb6e8ace02/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.xml" />
+    <list default="true" id="0ca78dd4-36d8-454b-b12c-624970707e88" name="Default" comment="create table rol">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/angular/services/functions.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Models/Permission.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Models/Role.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/angular/services/Functions.service.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/app/components/app-header/app-header.component.html" afterPath="$PROJECT_DIR$/angular/app/components/app-header/app-header.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/app/components/app-root/app-root.component.html" afterPath="$PROJECT_DIR$/angular/app/components/app-root/app-root.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/app/components/app-header/app-header.component.js" afterPath="$PROJECT_DIR$/angular/app/components/app-header/app-header.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/app/components/exam-clinic/exam-clinic.component.html" afterPath="$PROJECT_DIR$/angular/app/components/exam-clinic/exam-clinic.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/app/components/exam-clinic/exam-clinic.component.js" afterPath="$PROJECT_DIR$/angular/app/components/exam-clinic/exam-clinic.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/app/components/info-pacient/info-pacient.component.html" afterPath="$PROJECT_DIR$/angular/app/components/info-pacient/info-pacient.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/app/components/info-pacient/info-pacient.component.js" afterPath="$PROJECT_DIR$/angular/app/components/info-pacient/info-pacient.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/app/components/login-form/login-form.component.html" afterPath="$PROJECT_DIR$/angular/app/components/login-form/login-form.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/app/components/login-form/login-form.component.js" afterPath="$PROJECT_DIR$/angular/app/components/login-form/login-form.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/app/components/steeper-form/steeper-form.component.html" afterPath="$PROJECT_DIR$/angular/app/components/steeper-form/steeper-form.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/app/components/steeper-form/steeper-form.component.js" afterPath="$PROJECT_DIR$/angular/app/components/steeper-form/steeper-form.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/app/components/summary-general/summary-general.component.html" afterPath="$PROJECT_DIR$/angular/app/components/summary-general/summary-general.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/app/components/summary-general/summary-general.component.js" afterPath="$PROJECT_DIR$/angular/app/components/summary-general/summary-general.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/app/pages/landing/landing.page.html" afterPath="$PROJECT_DIR$/angular/app/pages/landing/landing.page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/app/pages/pacients/pacients.page.html" afterPath="$PROJECT_DIR$/angular/app/pages/pacients/pacients.page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/app/pages/steeper-form/steeper-form.page.html" afterPath="$PROJECT_DIR$/angular/app/pages/steeper-form/steeper-form.page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/app/pages/steeper-form/steeper-form.scss" afterPath="$PROJECT_DIR$/angular/app/pages/steeper-form/steeper-form.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/config/routes.config.js" afterPath="$PROJECT_DIR$/angular/config/routes.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/controllers/pacient.controller.js" afterPath="$PROJECT_DIR$/angular/controllers/pacient.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/controllers/steeper.controller.js" afterPath="$PROJECT_DIR$/angular/controllers/steeper.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/index.components.js" afterPath="$PROJECT_DIR$/angular/index.components.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/critical.scss" afterPath="$PROJECT_DIR$/angular/critical.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/index.modules.js" afterPath="$PROJECT_DIR$/angular/index.modules.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/index.services.js" afterPath="$PROJECT_DIR$/angular/index.services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angular/services/API.service.js" afterPath="$PROJECT_DIR$/angular/services/API.service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/API/PacientAPIController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/PacientAPIController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Person.php" afterPath="$PROJECT_DIR$/app/Models/Person.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_12_27_135627_create_people_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_12_27_135627_create_people_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/HistoryClinic.php" afterPath="$PROJECT_DIR$/app/Models/HistoryClinic.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Pacient.php" afterPath="$PROJECT_DIR$/app/Models/Pacient.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Question.php" afterPath="$PROJECT_DIR$/app/Models/Question.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/ResponseQuestion.php" afterPath="$PROJECT_DIR$/app/Models/ResponseQuestion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/ResponseQuestionRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/ResponseQuestionRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_02_05_031325_create_response_questions_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_02_05_031325_create_response_questions_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/service-worker.js" afterPath="$PROJECT_DIR$/public/service-worker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api.php" afterPath="$PROJECT_DIR$/routes/api.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/bower.task.js" afterPath="$PROJECT_DIR$/tasks/bower.task.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -96,6 +79,20 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="fernando@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -103,53 +100,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PacientAPIController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/PacientAPIController.php">
+      <file leaf-file-name="info-pacient.component.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular/app/components/info-pacient/info-pacient.component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-              <folding>
-                <element signature="e#44#94#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Functions.service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular/services/Functions.service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="432">
+              <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="steeper.controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular/controllers/steeper.controller.js">
+      <file leaf-file-name="summary-general.component.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular/app/components/summary-general/summary-general.component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exam-clinic.component.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular/app/components/exam-clinic/exam-clinic.component.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exam-clinic.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/angular/app/components/exam-clinic/exam-clinic.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="198">
+              <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -158,28 +123,68 @@
       <file leaf-file-name="steeper-form.page.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular/app/pages/steeper-form/steeper-form.page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+            <state relative-caret-position="180">
+              <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.components.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular/index.components.js">
+      <file leaf-file-name="pacient.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular/controllers/pacient.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="256">
+              <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.services.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular/index.services.js">
+      <file leaf-file-name="steeper-form.component.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular/app/components/steeper-form/steeper-form.component.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="24" />
+            <state relative-caret-position="347">
+              <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PacientAPIController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/PacientAPIController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="123" column="63" lean-forward="false" selection-start-line="123" selection-start-column="63" selection-end-line="123" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="restangular.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bower_components/restangular/src/restangular.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="269" column="7" lean-forward="false" selection-start-line="269" selection-start-column="7" selection-end-line="269" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResponseQuestionAPIController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResponseQuestion.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Models/ResponseQuestion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -203,7 +208,16 @@
       <find>lastName</find>
       <find>mes</find>
       <find>$personRepository</find>
+      <find>vm.response</find>
+      <find>hover</find>
+      <find>motivo_consulta</find>
+      <find>start</find>
+      <find>blockUIConfig</find>
+      <find>template</find>
     </findStrings>
+    <replaceStrings>
+      <replace>vm.response.question</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -211,57 +225,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Repositories/PacientRepository.php" />
-        <option value="$PROJECT_DIR$/tests/traits/MakePacientTrait.php" />
-        <option value="$PROJECT_DIR$/public/views/app/components/steeper-form/steeper-form.component.html" />
-        <option value="$PROJECT_DIR$/app/Repositories/PersonRepository.php" />
-        <option value="$PROJECT_DIR$/public/views/app/pages/pacients/pacients.page.html" />
-        <option value="$PROJECT_DIR$/database/migrations/2016_12_27_141835_create_pacients_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/Pacient.php" />
-        <option value="$PROJECT_DIR$/angular/app/components/steeper-form/steeper-form.component.js" />
-        <option value="$PROJECT_DIR$/angular/app/components/app-header/app-header.component.js" />
-        <option value="$PROJECT_DIR$/angular/app/components/login-form/login-form.component.js" />
-        <option value="$PROJECT_DIR$/angular/run/routes.run.js" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/API/ControlSheetAPIController.php" />
-        <option value="$PROJECT_DIR$/angular/services/API.service.js" />
-        <option value="$PROJECT_DIR$/database/migrations/2017_01_31_034227_create_question_responses_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2017_01_31_032520_create_history_clinics_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2017_01_31_033737_create_type_responses_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2017_01_31_034036_create_responses_table.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/ResponseRepository.php" />
-        <option value="$PROJECT_DIR$/app/Models/Response.php" />
-        <option value="$PROJECT_DIR$/tests/traits/MakeResponseTrait.php" />
-        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/angular/app/components/app-header/app-header.component.html" />
-        <option value="$PROJECT_DIR$/public/views/app/pages/landing/landing.page.html" />
-        <option value="$PROJECT_DIR$/database/migrations/2017_02_05_031325_create_response_questions_table.php" />
-        <option value="$PROJECT_DIR$/public/views/app/pages/pacientform/pacientform.page.html" />
-        <option value="$PROJECT_DIR$/public/views/app/pages/steeper-form/steeper-form.page.html" />
-        <option value="$PROJECT_DIR$/angular/app/pages/pacientform/pacientform.page.html" />
-        <option value="$PROJECT_DIR$/angular/config/routes.config.js" />
-        <option value="$PROJECT_DIR$/angular/app/pages/steeper-form/steeper-form.scss" />
-        <option value="$PROJECT_DIR$/angular/app/components/steeper-form/steeper-form.component.html" />
-        <option value="$PROJECT_DIR$/database/migrations/2017_01_31_033311_create_sections_table.php" />
-        <option value="$PROJECT_DIR$/database/seeds/SectionsTableSeeder.php" />
-        <option value="$PROJECT_DIR$/angular/index.components.js" />
-        <option value="$PROJECT_DIR$/angular/app/pages/landing/landing.page.html" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/API/SectionAPIController.php" />
-        <option value="$PROJECT_DIR$/angular/app/components/summary-general/summary-general.component.html" />
-        <option value="$PROJECT_DIR$/angular/app/components/summary-general/summary-general.component.js" />
         <option value="$PROJECT_DIR$/database/migrations/2017_01_31_033625_create_questions_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/QuestionsTableSeeder.php" />
-        <option value="$PROJECT_DIR$/angular/app/components/info-pacient/info-pacient.component.js" />
-        <option value="$PROJECT_DIR$/angular/app/components/app-root/app-root.component.html" />
-        <option value="$PROJECT_DIR$/angular/app/components/info-pacient/info-pacient.component.html" />
-        <option value="$PROJECT_DIR$/storage/logs/laravel.log" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/API/PacientAPIController.php" />
-        <option value="$PROJECT_DIR$/angular/app/pages/pacients/pacients.page.html" />
         <option value="$PROJECT_DIR$/app/Models/Person.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_12_27_135627_create_people_table.php" />
-        <option value="$PROJECT_DIR$/angular/services/Functions.service.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
+        <option value="$PROJECT_DIR$/app/Models/Role.php" />
+        <option value="$PROJECT_DIR$/app/Models/Permission.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/API/UserAPIController.php" />
+        <option value="$PROJECT_DIR$/angular/app/components/app-header/app-header.component.js" />
+        <option value="$PROJECT_DIR$/angular/config/routes.config.js" />
+        <option value="$PROJECT_DIR$/angular/controllers/table.controller.js" />
+        <option value="$PROJECT_DIR$/angular/app/components/info-pacient/info-pacient.component.html" />
+        <option value="$PROJECT_DIR$/app/Models/Question.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2017_02_05_031325_create_response_questions_table.php" />
+        <option value="$PROJECT_DIR$/app/Models/HistoryClinic.php" />
+        <option value="$PROJECT_DIR$/public/css/final.css" />
+        <option value="$PROJECT_DIR$/public/js/final.js" />
+        <option value="$PROJECT_DIR$/angular/app/pages/steeper-form/steeper-form.scss" />
+        <option value="$PROJECT_DIR$/angular/app/components/login-form/login-form.component.html" />
+        <option value="$PROJECT_DIR$/angular/app/components/login-form/login-form.component.js" />
+        <option value="$PROJECT_DIR$/angular/critical.scss" />
+        <option value="$PROJECT_DIR$/angular/app/components/exam-clinic/exam-clinic.component.html" />
+        <option value="$PROJECT_DIR$/angular/app/components/exam-clinic/exam-clinic.component.js" />
         <option value="$PROJECT_DIR$/angular/app/pages/steeper-form/steeper-form.page.html" />
+        <option value="$PROJECT_DIR$/angular/services/Functions.service.js" />
+        <option value="$PROJECT_DIR$/app/Models/Pacient.php" />
+        <option value="$PROJECT_DIR$/angular/services/functions.service.js" />
+        <option value="$PROJECT_DIR$/angular/app/pages/pacients/pacients.page.html" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/ResponseQuestionRepository.php" />
+        <option value="$PROJECT_DIR$/angular/app/components/summary-general/summary-general.component.js" />
+        <option value="$PROJECT_DIR$/angular/app/components/steeper-form/steeper-form.component.html" />
+        <option value="$PROJECT_DIR$/angular/app/components/app-root/app-root.component.html" />
+        <option value="$PROJECT_DIR$/angular/index.modules.js" />
+        <option value="$PROJECT_DIR$/angular/services/API.service.js" />
+        <option value="$PROJECT_DIR$/bower_components/angular-block-ui/dist/angular-block-ui.css" />
+        <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/angular/app/components/summary-general/summary-general.component.html" />
+        <option value="$PROJECT_DIR$/tasks/bower.task.js" />
+        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
+        <option value="$PROJECT_DIR$/angular/app/pages/landing/landing.page.html" />
+        <option value="$PROJECT_DIR$/angular/app/components/app-header/app-header.component.html" />
         <option value="$PROJECT_DIR$/angular/controllers/steeper.controller.js" />
+        <option value="$PROJECT_DIR$/storage/logs/laravel.log" />
+        <option value="$PROJECT_DIR$/app/Models/ResponseQuestion.php" />
+        <option value="$PROJECT_DIR$/angular/app/components/info-pacient/info-pacient.component.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php" />
+        <option value="$PROJECT_DIR$/angular/controllers/pacient.controller.js" />
+        <option value="$PROJECT_DIR$/angular/app/components/steeper-form/steeper-form.component.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/API/PacientAPIController.php" />
       </list>
     </option>
   </component>
@@ -390,7 +404,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -413,11 +427,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logs" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -431,7 +441,59 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="storage" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fernando" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fernando" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fernando" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fernando" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="API" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -446,24 +508,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fernando" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fernando" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -502,8 +546,48 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
+              <option name="myItemId" value="fernando" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fernando" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fernando" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fernando" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -511,79 +595,9 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fernando" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fernando" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fernando" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fernando" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fernando" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fernando" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exam-clinic" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -740,7 +754,25 @@
       <workItem from="1487041391673" duration="3088000" />
       <workItem from="1487214392545" duration="3562000" />
       <workItem from="1487297484710" duration="5126000" />
-      <workItem from="1487383548797" duration="1898000" />
+      <workItem from="1487383548797" duration="4704000" />
+      <workItem from="1487425674257" duration="6431000" />
+      <workItem from="1487457688541" duration="7899000" />
+      <workItem from="1487478969974" duration="613000" />
+      <workItem from="1487511229656" duration="1450000" />
+      <workItem from="1487515148332" duration="4179000" />
+      <workItem from="1487531598241" duration="1105000" />
+      <workItem from="1487533092345" duration="8000000" />
+      <workItem from="1487558319559" duration="3733000" />
+      <workItem from="1487732611445" duration="1199000" />
+      <workItem from="1487734190234" duration="2261000" />
+      <workItem from="1487902256362" duration="6886000" />
+      <workItem from="1488067753508" duration="7147000" />
+      <workItem from="1488115026468" duration="35693000" />
+      <workItem from="1488206162808" duration="21601000" />
+      <workItem from="1488291874848" duration="1959000" />
+      <workItem from="1488317370198" duration="4189000" />
+      <workItem from="1488636682118" duration="5066000" />
+      <workItem from="1488682582145" duration="3048000" />
     </task>
     <task id="LOCAL-00001" summary="create table rol">
       <created>1482846024969</created>
@@ -767,7 +799,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231299000" />
+    <option name="totallyTimeSpent" value="356564000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -783,27 +815,27 @@
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21505377" sideWeight="0.50621116" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24861878" sideWeight="0.4937888" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27940017" sideWeight="0.4937888" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34333333" sideWeight="0.5079559" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13022889" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6566667" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12974297" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21111111" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49444443" sideWeight="0.49652117" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.249694" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3381877" sideWeight="0.49204406" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2394822" sideWeight="0.49204406" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2880259" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49444443" sideWeight="0.49652117" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28640777" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -836,219 +868,483 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="29" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php</url>
+          <line>62</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php</url>
+          <line>63</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php</url>
+          <line>64</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php</url>
+          <line>65</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php</url>
+          <line>66</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php</url>
+          <line>68</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php</url>
+          <line>69</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php</url>
+          <line>67</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php</url>
+          <line>70</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php</url>
+          <line>71</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php</url>
+          <line>73</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php</url>
+          <line>72</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php</url>
+          <line>74</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php</url>
+          <line>75</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php</url>
+          <line>76</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="115" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/HistoryClinicAPIController.php">
+    <entry file="file://$PROJECT_DIR$/bower_components/tg-angular-validator/dist/angular-validator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1716">
+        <state relative-caret-position="148">
+          <caret line="237" column="0" lean-forward="true" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/app/components/login-form/login-form.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/critical.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/app/components/exam-clinic/exam-clinic.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/app/components/exam-clinic/exam-clinic.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="47" lean-forward="false" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/config/theme.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/app/pages/pacients/pacients.page.html">
+    <entry file="file://$PROJECT_DIR$/angular/index.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/config/satellizer.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/config/loading_bar.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/run/routes.run.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/index.services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Person.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Pacient.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+    <entry file="file://$PROJECT_DIR$/app/Models/HistoryClinic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12834">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="539">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/vendor.js">
+    <entry file="file://$PROJECT_DIR$/angular/services/functions.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21762">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/build/js/final-f3d0d6643e.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1944">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/final.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25668">
-          <caret line="84498" column="1205" lean-forward="false" selection-start-line="84498" selection-start-column="1205" selection-end-line="84498" selection-end-column="1205" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/app/components/login-form/login-form.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/app/pages/pacientform/pacientform.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/app/pages/steeper-form/steeper-form.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/app/pages/pacientform/pacientform.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/app/components/control-sheet/control-sheet.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/app/components/app-header/app-header.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+        <state relative-caret-position="378">
+          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/prettus/l5-repository/src/Prettus/Repository/Eloquent/BaseRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="392" column="20" lean-forward="false" selection-start-line="392" selection-start-column="20" selection-end-line="392" selection-end-column="20" />
+        <state relative-caret-position="211">
+          <caret line="417" column="33" lean-forward="false" selection-start-line="417" selection-start-column="33" selection-end-line="417" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular/app/pages/steeper-form/steeper-form.scss">
+    <entry file="file://$PROJECT_DIR$/app/Repositories/ResponseQuestionRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="142" column="1" lean-forward="false" selection-start-line="142" selection-start-column="1" selection-end-line="142" selection-end-column="1" />
+        <state relative-caret-position="432">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular/app/components/summaryGeneral/summaryGeneral.component.html" />
-    <entry file="file://$PROJECT_DIR$/angular/app/pages/landing/landing.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/app/components/steeper-form/steeper-form.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/SectionsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="93" column="14" lean-forward="false" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
+    <entry file="uml://DATABASE/bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.SCHEMA:fernando.public">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.SCHEMA:fernando.public</OriginalElement>
+          <nodes>
+            <node x="737.25" y="630.0">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.questions</node>
+            <node x="411.375" y="1399.0">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.role_user</node>
+            <node x="465.75" y="654.0">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.history_clinics</node>
+            <node x="0.0" y="904.0">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.attachments</node>
+            <node x="762.0" y="1149.0">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.migrations</node>
+            <node x="239.0" y="1161.0">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.roles</node>
+            <node x="617.75" y="904.0">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.response_questions</node>
+            <node x="966.0" y="1149.0">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.password_resets</node>
+            <node x="642.5" y="298.0">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.sections</node>
+            <node x="119.5" y="630.0">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.control_sheets</node>
+            <node x="239.0" y="0.0">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.people</node>
+            <node x="0.0" y="1161.0">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.permissions</node>
+            <node x="478.0" y="1149.0">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.users</node>
+            <node x="259.0" y="334.0">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.pacients</node>
+            <node x="259.0" y="904.0">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.observations</node>
+            <node x="89.625" y="1399.0">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.permission_role</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.permission_role" target="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.roles">
+              <point x="56.0" y="-39.5" />
+              <point x="257.625" y="1374.0" />
+              <point x="293.75" y="1374.0" />
+              <point x="-54.75" y="88.0" />
+            </edge>
+            <edge source="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.observations" target="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.control_sheets">
+              <point x="0.0" y="-100.0" />
+              <point x="378.5" y="879.0" />
+              <point x="313.75" y="879.0" />
+              <point x="64.75" y="112.0" />
+            </edge>
+            <edge source="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.questions" target="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.sections">
+              <point x="0.0" y="-112.0" />
+              <point x="74.75" y="136.0" />
+            </edge>
+            <edge source="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.history_clinics" target="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.pacients">
+              <point x="0.0" y="-88.0" />
+              <point x="575.25" y="610.0" />
+              <point x="438.25" y="610.0" />
+              <point x="59.75" y="100.0" />
+            </edge>
+            <edge source="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.attachments" target="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.control_sheets">
+              <point x="0.0" y="-100.0" />
+              <point x="119.5" y="879.0" />
+              <point x="184.25" y="879.0" />
+              <point x="-64.75" y="112.0" />
+            </edge>
+            <edge source="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.response_questions" target="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.history_clinics">
+              <point x="-59.75" y="-100.0" />
+              <point x="677.5" y="879.0" />
+              <point x="575.25" y="879.0" />
+              <point x="0.0" y="88.0" />
+            </edge>
+            <edge source="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.response_questions" target="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.questions">
+              <point x="59.75" y="-100.0" />
+              <point x="797.0" y="879.0" />
+              <point x="866.75" y="879.0" />
+              <point x="0.0" y="112.0" />
+            </edge>
+            <edge source="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.pacients" target="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.people">
+              <point x="0.0" y="-100.0" />
+              <point x="0.0" y="124.0" />
+            </edge>
+            <edge source="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.role_user" target="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.users">
+              <point x="44.5" y="-39.5" />
+              <point x="544.875" y="1374.0" />
+              <point x="597.5" y="1374.0" />
+              <point x="0.0" y="100.0" />
+            </edge>
+            <edge source="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.sections" target="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.sections">
+              <point x="-74.75" y="136.0" />
+              <point x="717.25" y="590.0" />
+              <point x="622.5" y="590.0" />
+              <point x="622.5" y="434.0" />
+              <point x="-149.5" y="-0.0" />
+            </edge>
+            <edge source="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.permission_role" target="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.permissions">
+              <point x="-56.0" y="-39.5" />
+              <point x="145.625" y="1374.0" />
+              <point x="109.5" y="1374.0" />
+              <point x="0.0" y="88.0" />
+            </edge>
+            <edge source="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.control_sheets" target="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.pacients">
+              <point x="0.0" y="-112.0" />
+              <point x="249.0" y="610.0" />
+              <point x="318.75" y="610.0" />
+              <point x="-59.75" y="100.0" />
+            </edge>
+            <edge source="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.role_user" target="bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.roles">
+              <point x="-44.5" y="-39.5" />
+              <point x="455.875" y="1374.0" />
+              <point x="403.25" y="1374.0" />
+              <point x="54.75" y="88.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.6973297730307076" x="179.0" y="549.0" />
+          <SelectedNodes>
+            <node>bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.observations</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/SectionAPIController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="55" column="20" lean-forward="false" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
+        <state relative-caret-position="18">
+          <caret line="35" column="25" lean-forward="false" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="30" />
+        <state relative-caret-position="65">
+          <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular/config/routes.config.js">
+    <entry file="file://$PROJECT_DIR$/angular/app/components/steeper-form/steeper-form.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Section.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Question.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2017_01_31_033311_create_sections_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="18" column="53" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2017_01_31_033625_create_questions_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/app/components/info-pacient/info-pacient.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/app/components/summary-general/summary-general.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/QuestionsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="381" column="44" lean-forward="false" selection-start-line="381" selection-start-column="44" selection-end-line="381" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/app/components/summary-general/summary-general.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="88" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/app/components/info-pacient/info-pacient.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/angular/app/components/app-root/app-root.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/app/components/app-root/app-root.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/services/API.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/angular-block-ui/dist/angular-block-ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="298" column="15" lean-forward="false" selection-start-line="298" selection-start-column="4" selection-end-line="298" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/index.modules.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/angular-block-ui/dist/angular-block-ui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="51" column="14" lean-forward="false" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/API/UpdateResponseQuestionAPIRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/infyomlabs/laravel-generator/src/Request/APIRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/app/components/info-pacient/info-pacient.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="73" lean-forward="false" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/bootstrap-datepicker/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/app/components/summary-general/summary-general.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="60" lean-forward="false" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/bower.task.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="48" column="17" lean-forward="false" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="52" lean-forward="false" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/app/pages/pacients/pacients.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="17" column="56" lean-forward="false" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/app/components/app-header/app-header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="66" lean-forward="false" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/config/routes.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="70" column="28" lean-forward="false" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/app/pages/landing/landing.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/controllers/steeper.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/app/pages/steeper-form/steeper-form.page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1059,173 +1355,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular/controllers/pacient.controller.js">
+    <entry file="file://$PROJECT_DIR$/app/Models/ResponseQuestion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/app/components/summary-general/summary-general.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular/app/components/info-pacient/info-pacient.component.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
-          <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+          <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular/app/pages/pacients/pacients.page.html">
+    <entry file="file://$PROJECT_DIR$/bower_components/restangular/src/restangular.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        <state relative-caret-position="552">
+          <caret line="269" column="7" lean-forward="false" selection-start-line="269" selection-start-column="7" selection-end-line="269" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular/app/components/steeper-form/steeper-form.component.html">
+    <entry file="file://$PROJECT_DIR$/angular/controllers/pacient.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="66" column="8" lean-forward="false" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+        <state relative-caret-position="256">
+          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_12_27_141835_create_pacients_table.php">
+    <entry file="file://$PROJECT_DIR$/angular/app/components/steeper-form/steeper-form.component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-122">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2016_12_27_135627_create_people_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Person.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.SCHEMA:fernando.public">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.SCHEMA:fernando.public</OriginalElement>
-          <nodes>
-            <node x="" y="">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.role_user</node>
-            <node x="" y="">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.questions</node>
-            <node x="" y="">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.attachments</node>
-            <node x="" y="">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.history_clinics</node>
-            <node x="" y="">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.migrations</node>
-            <node x="" y="">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.roles</node>
-            <node x="" y="">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.response_questions</node>
-            <node x="" y="">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.sections</node>
-            <node x="" y="">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.password_resets</node>
-            <node x="" y="">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.control_sheets</node>
-            <node x="" y="">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.people</node>
-            <node x="" y="">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.permissions</node>
-            <node x="" y="">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.users</node>
-            <node x="" y="">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.pacients</node>
-            <node x="" y="">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.permission_role</node>
-            <node x="" y="">bbda30a4-ae6b-4308-9e92-5bcb6e8ace02.TABLE:fernando.public.observations</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.6576769025367155" x="495.0" y="603.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/PersonAPIController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state relative-caret-position="347">
+          <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
+        <state relative-caret-position="125">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular/services/API.service.js">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/ResponseQuestionAPIController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/services/dialog.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="183">
+          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/PacientAPIController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="e#44#94#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/index.components.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/index.services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/services/Functions.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/app/pages/steeper-form/steeper-form.page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/controllers/steeper.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/app/components/exam-clinic/exam-clinic.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular/app/components/exam-clinic/exam-clinic.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="271">
+          <caret line="123" column="63" lean-forward="false" selection-start-line="123" selection-start-column="63" selection-end-line="123" selection-end-column="63" />
           <folding />
         </state>
       </provider>

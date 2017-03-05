@@ -23,4 +23,5 @@ class ResponseQuestionRepository extends BaseRepository
     {
         return ResponseQuestion::class;
     }
+
 }

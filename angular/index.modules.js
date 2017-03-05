@@ -18,6 +18,8 @@ angular.module('app.directives', []);
 angular.module('app.controllers', []);
 angular.module('app.components', [
 	'ui.router', 'ui.bootstrap', 'toastr',
-	'restangular', 'ngStorage', 'satellizer'
+	'restangular', 'ngStorage', 'satellizer',
+	'angularValidator', 'ngFlatDatepicker',
+	'blockUI'
 ]);
 

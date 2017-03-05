@@ -1,76 +1,119 @@
-<form ng-submit="vm.savePacient()" class="form-horizontal form-group-sm">
-    <fieldset>
-        <legend>Registrar Paciente</legend>
-        <div class="form-group">
-            <label for="nameId" class="col-sm-2 control-label">Nombres</label>
-            <div class="col-sm-10">
-                <input type="text" id="nameId" ng-model="vm.pacient.name" class="form-control">
+<div>
+    <form novalidate angular-validator angular-validator-submit="vm.savePacient()" angular-validator-quiet name='pacientForm' class="form-horizontal form-group-sm">
+        <fieldset>
+            <legend>Registrar Paciente</legend>
+            <input type="hidden" name="id" ng-model="vm.pacient.id">
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Nombres</label>
+                <div class="col-sm-10">
+                    <input type="text" id="name"
+                           name="name"
+                           ng-model="vm.pacient.name" class="form-control"
+                           required>
+                </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label for="lastNameId" class="col-sm-2 control-label">Apellidos</label>
-            <div class="col-sm-10">
-                <input type="text" id="lastNameId" ng-model="vm.pacient.last_name" class="form-control">
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-sm-2">
-                <div class="row">
-                    <label for="ageId" class="col-sm-12 control-label">Fecha Nac. / Genero</label>
+            <div class="form-group">
+                <label for="lastNameId" class="col-sm-2 control-label">Apellidos</label>
+                <div class="col-sm-10">
+                    <input type="text" id="lastNameId"
+                           name="last_name"
+                           required
+                           ng-model="vm.pacient.last_name" class="form-control">
                 </div>
             </div>
-            <div class="col-sm-10">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <input type="text" id="ageId" ng-model="vm.pacient.age" class="form-control">
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <div class="row">
+                        <label for="ageId" class="col-sm-12 control-label">Fecha Nac. / Genero</label>
                     </div>
-                    <div class="col-sm-6">
-                        <input type="text" id="genderId" ng-model="vm.pacient.gender" class="form-control">
+                </div>
+                <div class="col-sm-10">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <input type="text" id="ageId"
+                                       name="age"
+                                       required
+                                       ng-flat-datepicker datepicker-config="vm.datepickerConfig"
+                                       ng-model="vm.pacient.age"
+                                       class="form-control">
+                                <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-calendar" ng-model="vm.pacient.age"></i>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <select name="gender" id="genderId"
+                                    required
+                                    ng-model="vm.pacient.gender" class="form-control">
+                                <option value="MALE">Male</option>
+                                <option value="FEMALE">Female</option>
+                                <option value="OTHER">Other</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label for="addreesId" class="col-sm-2 control-label">Domicilio Particular</label>
-            <div class="col-sm-10">
-                <input type="text" id="addreesId" ng-model="vm.pacient.address" class="form-control">
+            <div class="form-group">
+                <label for="addreesId" class="col-sm-2 control-label">Domicilio Particular</label>
+                <div class="col-sm-10">
+                    <input type="text" id="addreesId"
+                           required
+                           ng-model="vm.pacient.address" class="form-control">
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label for="phoneId" class="col-sm-2 control-label">Telefono</label>
-            <div class="col-sm-10">
-                <input type="text" id="phoneId" ng-model="vm.pacient.telefono" class="form-control">
+            <div class="form-group">
+                <label for="phoneId" class="col-sm-2 control-label">Telefono</label>
+                <div class="col-sm-10">
+                    <input type="text" id="phoneId"
+                           ng-model="vm.pacient.telefono" class="form-control">
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label for="phoneMobileId" class="col-sm-2 control-label">Celular</label>
-            <div class="col-sm-10">
-                <input type="text" id="phoneMobileId" ng-model="vm.pacient.celular" class="form-control">
+            <div class="form-group">
+                <label for="phoneMobileId" class="col-sm-2 control-label">Celular</label>
+                <div class="col-sm-10">
+                    <input type="text" id="phoneMobileId"
+                           ng-model="vm.pacient.celular" class="form-control">
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label for="odontologoId" class="col-sm-2 control-label">Odontologo Familiar</label>
-            <div class="col-sm-10">
-                <input type="text" id="odontologoId" ng-model="vm.pacient.odontologo" class="form-control">
+            <div class="form-group">
+                <label for="odontologoId" class="col-sm-2 control-label">Odontologo Familiar</label>
+                <div class="col-sm-10">
+                    <input type="text" id="odontologoId"
+                           ng-model="vm.pacient.odontologo" class="form-control">
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label for="derivedById" class="col-sm-2 control-label">Derivado por</label>
-            <div class="col-sm-10">
-                <input type="text" id="derivedById" ng-model="vm.pacient.derivado_por" class="form-control">
+            <div class="form-group">
+                <label for="derivedById" class="col-sm-2 control-label">Derivado por</label>
+                <div class="col-sm-10">
+                    <input type="text" id="derivedById"
+                           required
+                           ng-model="vm.pacient.pacient.derivado_por" class="form-control">
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <label for="motivoConsultaId" class="col-sm-2 control-label">Motivo Consulta</label>
-            <div class="col-sm-10">
-                <input type="text" id="motivoConsultaId" ng-model="vm.pacient.motivo_consulta" class="form-control">
+            <div class="form-group">
+                <label for="motivoConsultaId" class="col-sm-2 control-label">Motivo Consulta</label>
+                <div class="col-sm-10">
+                    <input type="text" id="motivoConsultaId"
+                           required
+                           ng-model="vm.pacient.pacient.motivo_consulta" class="form-control">
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-success">Guardar</button>
+            <div class="form-group">
+                <div ng-if="!vm.mode_edition" class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-success pull-right">
+                        Guardar
+                        <i class="glyphicon glyphicon-arrow-right"></i>
+                    </button>
+                </div>
+                <div ng-if="vm.mode_edition" class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-success pull-right">
+                        Actualizar
+                        <i class="glyphicon glyphicon-arrow-right"></i>
+                    </button>
+                </div>
             </div>
-        </div>
-    </fieldset>
-</form>
+        </fieldset>
+    </form>
+</div>

@@ -4,6 +4,22 @@ body{
 .form-group {
     margin-bottom: 7px;
 }
+.ng-flat-datepicker {
+    margin-top: 32px;
+    width: 290px;
+}
+.ng-flat-datepicker table tbody{
+    width: 270px;
+}
+.ng-flat-datepicker-wrapper{
+    display: block;
+}
+
+@-moz-document url-prefix() {
+    input[type="checkbox"], input[type="radio"] {
+        margin: 2px 0 0;
+    }
+}
 @media (min-width: 768px){
     .form-horizontal .control-label {
         padding-top: 0px;

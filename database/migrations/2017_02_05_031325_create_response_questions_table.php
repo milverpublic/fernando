@@ -19,7 +19,8 @@ class CreateResponseQuestionsTable extends Migration
             $table->foreign('history_clinic_id')->references('id')->on('history_clinics')->onDelete('cascade');
             $table->integer('question_id')->unsigned();
             $table->foreign('question_id')->references('id')->on('questions')->onDelete('cascade');
-            $table->string('reponse_value');
+            $table->string('reponse_value')->nullable();
+            $table->json('multiple')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

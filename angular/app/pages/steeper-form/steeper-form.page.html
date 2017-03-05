@@ -2,9 +2,9 @@
     <div class="wizard-inner">
         <div class="connecting-line"></div>
         <ul class="nav nav-tabs" role="tablist">
-            <li class="text-center" ng-repeat="section in vm.sections.data">
-                <a ui-sref="app.pacient({steep:'{{section.route}}'})" title="{{section.name_section}}"
-                   ng-click="vm.setProperties(123456)">
+            <li class="text-center" ng-repeat="section in vm.sections.data" ng-class="{'active': section.route==vm.$stateParams.steep}">
+                <a ng-click="vm.changeSection(section.route)"
+                   title="{{section.name_section}}">
                             <span class="round-tab">
                                 <i class="{{section.icon}}"></i>
                             </span>

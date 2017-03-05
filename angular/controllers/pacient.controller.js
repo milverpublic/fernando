@@ -2,17 +2,14 @@
  * @author milver.
  */
 export class PacientController{
-    constructor($scope, $uibModal,$log,ToastService,API,$state,$stateParams){
+    constructor($log,ToastService,API,$state,$stateParams,FunctionsService){
         'ngInject';
         this.$log=$log;
-        this.$scope=$scope;
-        this.$uibModal=$uibModal;
         this.ToastService=ToastService;
         this.API=API;
         this.$state=$state;
         this.$stateParams=$stateParams;
-        this.items = ['item1', 'item2', 'item3'];
-        this.animationsEnabled = true;
+        this.FunctionsService=FunctionsService;
         this.pacients=null;
     }
 
@@ -21,53 +18,22 @@ export class PacientController{
     }
     loadPacients(){
         let vm=this;
-        this.API.one('pacients').get().then(function (data) {
-            vm.pacients=data;
+        this.API.one('pacients').get().then(function (response) {
+            vm.pacients=response.data;
         });
     }
 
-    modalOpen (size) {
-        let $uibModal = this.$uibModal;
-        let $scope = this.$scope;
-        let $log = this.$log;
-        let items = this.items;
+    openFormPacient(){
+        this.FunctionsService.removeObjectSessionStorage('current_selection');
+        this.$state.go('app.pacient',{steep:'section1'});
+    }
 
-        var modalInstance = $uibModal.open({
-            animation: this.animationsEnabled,
-            templateUrl: 'myModalContent.html',
-            controller: this.modalcontroller,
-            controllerAs: 'mvm',
-            size: size,
-            resolve: {
-                items: () => {
-                    return items
-                }
-            }
+    viewHistoryClinic(person){
+        this.FunctionsService.setObjectSessionStorage('current_selection',{
+            'pacient_id': person.pacient.id,
+            'people_id': person.id,
+            'history_clinic_id': person.pacient.history_clinic.id,
         });
-
-        modalInstance.result.then((selectedItem) => {
-            $scope.selected = selectedItem
-        }, () => {
-            $log.info('Modal dismissed at: ' + new Date())
-        })
+        this.$state.go('app.pacient',{steep:'section1'});
     }
-
-    modalcontroller ($scope, $uibModalInstance, items) {
-        'ngInject'
-
-        this.items = items;
-
-        $scope.selected = {
-            item: items[0]
-        };
-
-        this.ok = () => {
-            $uibModalInstance.close($scope.selected.item)
-        };
-
-        this.cancel = () => {
-            $uibModalInstance.dismiss('cancel')
-        };
-    }
-
 }

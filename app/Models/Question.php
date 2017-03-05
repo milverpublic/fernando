@@ -21,7 +21,8 @@ class Question extends Model
 
 
     public $fillable = [
-        'name'
+        'name',
+        'model'
     ];
 
     /**
@@ -30,7 +31,8 @@ class Question extends Model
      * @var array
      */
     protected $casts = [
-        'name' => 'string'
+        'name' => 'string',
+        'model' => 'string'
     ];
 
     /**

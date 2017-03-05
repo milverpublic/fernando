@@ -22,10 +22,10 @@ Route::post('auth/password/reset', 'Auth\PasswordResetController@reset');
 
 
 //protected API routes with JWT (must be logged in)
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:api');
-Route::group(['namespace' => 'API'], function () {
+//Route::get('/user', function (Request $request) {
+//    return $request->user();
+//})->middleware('auth:api');
+Route::group(['namespace' => 'API', 'middleware' => 'auth:api'], function () {
     Route::resource('people', 'PersonAPIController');
 
     Route::resource('pacients', 'PacientAPIController');
@@ -45,7 +45,8 @@ Route::group(['namespace' => 'API'], function () {
     Route::resource('questions', 'QuestionAPIController');
 
     Route::resource('response_questions', 'ResponseQuestionAPIController');
+    Route::get('section/{section}/history/{history}', 'ResponseQuestionAPIController@showResponsesQuestions');
 
-
+    Route::get('me','UserAPIController@getMe');
 
 });

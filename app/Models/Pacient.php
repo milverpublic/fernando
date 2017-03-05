@@ -41,15 +41,15 @@ class Pacient extends Model
      * @var array
      */
     public static $rules = [
-        'derivado_por' => 'required',
-        'motivo_consulta' => 'required'
     ];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function person(){
-        return $this->belongsTo('App\Models\Person', 'people_id', 'id')->select(["name"]);
+        return $this->belongsTo('App\Models\Person', 'people_id', 'id')->select();
     }
-    
+    public function historyClinic(){
+        return $this->hasMany('App\Models\HistoryClinic', 'pacient_id', 'id');
+    }
 }

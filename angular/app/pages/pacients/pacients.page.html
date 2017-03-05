@@ -1,11 +1,12 @@
-<a ui-sref="app.wizard" class="btn btn-sm btn-success">create</a>
+<a ng-click="vm.openFormPacient()" class="btn btn-sm btn-success">create</a>
 <table class="table table-striped">
     <thead>
     <tr>
         <th>Paciente</th>
         <th>Derivado por</th>
         <th>Motivo</th>
-        <th>comentario</th>
+        <th>#</th>
+        <th>#</th>
     </tr>
     </thead>
     <tbody>
@@ -15,6 +16,9 @@
         <td>{{row.pacient.motivo_consulta}}</td>
         <td>
             <a ui-sref="app.controlsheet({pacientId:row.id})" class="btn btn-link"><i class="fa fa-lg fa-list-alt "></i></a>
+        </td>
+        <td>
+            <button ng-click="vm.viewHistoryClinic(row)" class="btn btn-link"><i class="fa fa-lg fa-eye "></i></button>
         </td>
     </tr>
     </tbody>

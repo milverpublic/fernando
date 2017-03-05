@@ -1,13 +1,16 @@
-<form ng-submit="vm.saveSummaryGeneral()" class="form-horizontal form-group-sm">
+<form ng-submit="vm.saveSummaryGeneral()" name="sumamaryGeneralForm" class="form-horizontal form-group-sm">
     <fieldset ng-repeat="form in vm.form.data">
         <legend>{{form.name_section}}</legend>
         <div class="form-group" ng-repeat="question in form.questions">
             <label for="{{question.model}}Id" class="col-sm-2 control-label">{{question.name}}</label>
             <div class="col-sm-10">
-                <input type="text" id="{{question.model}}Id" ng-model="vm.response[question.model]" placeholder="{{question.name}}" class="form-control">
+                <input type="text" id="{{question.model}}Id"
+                       required
+                       ng-model="vm.response.question[question.model]" placeholder="{{question.name}}" class="form-control">
             </div>
         </div>
     </fieldset>
+    <input class="datepicker" data-date-format="mm/dd/yyyy">
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
             <button type="submit" class="btn btn-success">Guardar</button>

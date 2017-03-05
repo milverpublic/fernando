@@ -22,5 +22,8 @@
     "main-bower-files": "^2.13.1",
     "ng-annotate-loader": "^0.1.1",
     "sw-precache": "^4.0.0"
+  },
+  "dependencies": {
+    "ng-flat-datepicker": "^0.1.4"
   }
 }
