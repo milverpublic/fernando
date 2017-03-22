@@ -1,13 +1,16 @@
 <div class="wizard">
     <div class="wizard-inner">
-        <div class="connecting-line"></div>
+        <div class="connecting-line" ng-class="{'disabled': vm.enableSections==false}"></div>
         <ul class="nav nav-tabs" role="tablist">
             <li class="text-center" ng-repeat="section in vm.sections.data" ng-class="{'active': section.route==vm.$stateParams.steep}">
-                <a ng-click="vm.changeSection(section.route)"
+                <a ng-if="vm.enableSections || (section.id==7)" ng-click="vm.changeSection(section.route)"
                    title="{{section.name_section}}">
-                            <span class="round-tab">
-                                <i class="{{section.icon}}"></i>
-                            </span>
+                    <icon-umss icon="{{section.icon}}" size="umss-icon-section"></icon-umss>
+                </a>
+                <a ng-if="!vm.enableSections && (section.id!=7)"
+                   class="disabled"
+                   title="{{section.name_section}}">
+                    <icon-umss icon="{{section.icon}}" size="umss-icon-section"></icon-umss>
                 </a>
                 <p class="title-section">{{section.name_section}}</p>
             </li>
@@ -19,6 +22,9 @@
     <summary-general ng-switch-when="section2"></summary-general>
     <info-pacient ng-switch-when="section3"></info-pacient>
     <exam-clinic ng-switch-when="section4"></exam-clinic>
+    <model-study ng-switch-when="section5"></model-study>
+    <diagnostic ng-switch-when="section6"></diagnostic>
+    <treatment-plan ng-switch-when="section7"></treatment-plan>
     <steeper-form ng-switch-default></steeper-form>
 </div>
 

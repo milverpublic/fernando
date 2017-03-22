@@ -1,0 +1,23 @@
+<form ng-submit="vm.saveDiagnostic()" name="saveDiagnosticForm" class="form-horizontal form-group-sm">
+    <fieldset ng-repeat="form in vm.form.data">
+        <legend>{{form.name_section}}</legend>
+        <div class="form-group" ng-repeat="question in form.questions">
+            <label for="{{question.model}}Id" class="col-sm-2 control-label">{{question.name}}</label>
+            <div class="col-sm-10">
+                <textarea type="text" id="{{question.model}}Id"
+                          required
+                          ng-model="vm.response.question[question.model]"
+                          placeholder="{{question.name}}" class="form-control">
+                </textarea>
+            </div>
+        </div>
+    </fieldset>
+    <div class="form-group">
+        <div ng-if="vm.mode_edition" class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-success">Actualizar</button>
+        </div>
+        <div ng-if="!vm.mode_edition" class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-success">Guardar</button>
+        </div>
+    </div>
+</form>

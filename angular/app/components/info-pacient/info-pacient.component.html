@@ -69,7 +69,7 @@
                        placeholder="{{question.name}}"
                        ng-if="question.input_type=='text'"
                        class="form-control">
-                <div ng-if="(question.input_type=='checkbox') && (question.model=='question25')">
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question25')">
                     <label class="radio-inline">
                         <input type="radio" ng-model="vm.response.question[question.model]" value="PACIENTE"> Paciente
                     </label>
@@ -80,7 +80,7 @@
                         <input type="radio" ng-model="vm.response.question[question.model]" value="FAMILIAR"> Familiar
                     </label>
                 </div>
-                <div ng-if="(question.input_type=='checkbox') && (question.model=='question26')">
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question26')">
                     <label class="radio-inline">
                         <input type="radio" ng-model="vm.response.question[question.model]" value="Quiere el Tx"> Quiere el Tx
                     </label>
@@ -92,6 +92,14 @@
                     </label>
                     <label class="radio-inline">
                         <input type="radio" ng-model="vm.response.question[question.model]" value="No coopera"> No coopera
+                    </label>
+                </div>
+                <div ng-if="(question.input_type=='radiobutton') && (question.model=='question28')">
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" value="APROVED">Aprobado
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" ng-model="vm.response.question[question.model]" value="REJECTED">Denegado
                     </label>
                 </div>
             </div>

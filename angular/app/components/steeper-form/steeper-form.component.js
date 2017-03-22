@@ -1,5 +1,5 @@
 class SteeperFormController{
-    constructor($log,ToastService,API,$state,$auth,FunctionsService){
+    constructor($log,$scope,ToastService,API,$state,$auth,FunctionsService){
         'ngInject';
         this.$log=$log;
         this.ToastService=ToastService;
@@ -9,20 +9,25 @@ class SteeperFormController{
         this.FunctionsService=FunctionsService;
         this.pacient=null;
         this.mode_edition=false;
-        this.datepickerConfig= {
-            allowFuture: true,
-            dateFormat: 'YYYY-MM-DD',
-            maxDate:new Date(),
-            minDate:new Date('1970','01','01')
+
+        this.open = function() {
+            this.status.opened = true;
+        };
+
+        this.format = 'shortDate';
+
+        this.status = {
+            opened: false
         };
     }
 
     $onInit(){
         let vm=this;
-        let pacientId=this.FunctionsService.getObjectSessionStorage('current_selection').pacient_id;
-        if (pacientId !=null){
-            this.API.one('pacients',pacientId).get().then(function (response) {
+        let pacient=this.FunctionsService.getObjectSessionStorage('current_selection');
+        if (null !=pacient){
+            this.API.one('pacients',pacient.pacient_id).get().then(function (response) {
                 vm.pacient=response.data;
+                vm.$log.debug(vm.pacient);
                 vm.mode_edition=true;
             });
         }

@@ -1,0 +1,17 @@
+.btn-wizard{
+  border-radius: 4px !important;
+}
+.btn-group .btn+.btn{
+  margin-left: 5px !important;
+}
+.btn-group>.btn.btn-wizard:first-child:not(:last-child):not(.dropdown-toggle){
+  border-radius: 4px !important;
+}
+.btn-group>.btn.btn-wizard:last-child:not(:first-child){
+  border-radius: 4px !important;
+}
+.btn-group>.btn.btn-wizard:last-child:not(:first-child), .btn-group>.dropdown-toggle:not(:first-child){
+  border-radius: 4px !important;
+  border-top-left-radius: 1;
+  border-bottom-left-radius: 1;
+}

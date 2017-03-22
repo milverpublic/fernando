@@ -10,26 +10,41 @@ class SummaryGeneralController{
         this.form=null;
         this.response=null;
         this.section=1;
+        this.mode_edition=false;
     }
 
     $onInit(){
         let vm=this;
         let historyClinicId=this.FunctionsService.getObjectSessionStorage('current_selection').history_clinic_id;
-        this.response={
-            history_clinic_id: historyClinicId
-        };
         this.API.one('questionsforms/',this.section).get().then(function (data) {
             vm.form=data;
         });
-        this.API.one('section',this.section).one('history',historyClinicId).get().then(function (response) {
-            vm.response=response.data;
-        });
+        this.response={
+            history_clinic_id:historyClinicId
+        };
+        if(historyClinicId!=null){
+            this.API.one('section',this.section).one('history',historyClinicId).get().then(function (data) {
+                if(data.data!=null){
+                    vm.response=data.data;
+                    vm.mode_edition=true;
+                }
+            });
+        }
     }
     saveSummaryGeneral(){
         let vm=this;
-        this.API.all('response_questions').post(this.response).then(function (data) {
-            vm.ToastService.show(data.message);
-        });
+        let historyClinicId=this.FunctionsService.getObjectSessionStorage('current_selection').history_clinic_id;
+        if(!vm.mode_edition){
+            this.API.all('response_questions').post(this.response).then(function (data) {
+                vm.ToastService.show(data.message);
+                vm.$state.go('app.pacient',{steep:'section3'});
+            });
+        }else {
+            this.API.one('response_questions',historyClinicId).put(this.response).then(function (response) {
+                vm.ToastService.show(response.message);
+                vm.$state.go('app.pacient',{steep:'section3'});
+            });
+        }
     }
 
 }

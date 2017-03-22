@@ -22,6 +22,8 @@ class CreateSectionsTable extends Migration
             $table->integer('order')->nullable();
             $table->string('route')->nullable();
             $table->string('icon')->nullable();
+            $table->boolean('printable')->default(true);
+            $table->boolean('enable')->default(true);
             $table->timestamps();
             $table->softDeletes();
         });

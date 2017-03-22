@@ -13,10 +13,15 @@ export class SteeperController{
         this.FunctionsService=FunctionsService;
         this.pacient=null;
         this.sections=null;
+        this.enableSections=false;
     }
 
     $onInit(){
         let vm=this;
+        let pacient=this.FunctionsService.getObjectSessionStorage('current_selection');
+        if (pacient!=null){
+            this.enableSections=true;
+        }
         this.API.one('section').get().then(function (response) {
             vm.sections=response;
         });

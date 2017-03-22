@@ -1,5 +1,5 @@
 <div>
-    <form novalidate angular-validator angular-validator-submit="vm.savePacient()" angular-validator-quiet name='pacientForm' class="form-horizontal form-group-sm">
+    <form ng-submit="vm.savePacient()" name='pacientForm' class="form-horizontal form-group-sm">
         <fieldset>
             <legend>Registrar Paciente</legend>
             <input type="hidden" name="id" ng-model="vm.pacient.id">
@@ -25,21 +25,19 @@
             <div class="form-group">
                 <div class="col-sm-2">
                     <div class="row">
-                        <label for="ageId" class="col-sm-12 control-label">Fecha Nac. / Genero</label>
+                        <label class="col-sm-12 control-label">Fecha Nac. / Genero</label>
                     </div>
                 </div>
                 <div class="col-sm-10">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="input-group">
-                                <input type="text" id="ageId"
-                                       name="age"
-                                       required
-                                       ng-flat-datepicker datepicker-config="vm.datepickerConfig"
-                                       ng-model="vm.pacient.age"
+                                <!--uib-datepicker-popup is-open="vm.status.opened"
+                                       close-text="Close"-->
+                                <input type="text" ng-model="vm.pacient.age"
                                        class="form-control">
                                 <span class="input-group-addon">
-                                <i class="glyphicon glyphicon-calendar" ng-model="vm.pacient.age"></i>
+                                <i class="glyphicon glyphicon-calendar" ng-click="vm.open($event)"></i>
                             </span>
                             </div>
                         </div>

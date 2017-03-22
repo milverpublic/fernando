@@ -6,6 +6,7 @@ use App\Http\Requests\API\CreateControlSheetAPIRequest;
 use App\Http\Requests\API\UpdateControlSheetAPIRequest;
 use App\Models\ControlSheet;
 use App\Repositories\ControlSheetRepository;
+use App\Repositories\HistoryClinicRepository;
 use Illuminate\Http\Request;
 use App\Http\Controllers\AppBaseController;
 use InfyOm\Generator\Criteria\LimitOffsetCriteria;
@@ -21,10 +22,12 @@ class ControlSheetAPIController extends AppBaseController
 {
     /** @var  ControlSheetRepository */
     private $controlSheetRepository;
+    private $historyClinicRepository;
 
-    public function __construct(ControlSheetRepository $controlSheetRepo)
+    public function __construct(ControlSheetRepository $controlSheetRepo,HistoryClinicRepository $historyClinicRepo)
     {
         $this->controlSheetRepository = $controlSheetRepo;
+        $this->historyClinicRepository = $historyClinicRepo;
     }
 
     /**
@@ -54,8 +57,8 @@ class ControlSheetAPIController extends AppBaseController
     public function store(CreateControlSheetAPIRequest $request)
     {
         $input = $request->all();
-
         $controlSheets = $this->controlSheetRepository->create($input);
+        $historyClinic = $this->historyClinicRepository->findWhere(['pacient_id' => $input['pacient_id']])->first();
 
         return $this->sendResponse($controlSheets->toArray(), 'Control Sheet saved successfully');
     }
@@ -71,7 +74,7 @@ class ControlSheetAPIController extends AppBaseController
     public function show($id)
     {
         /** @var ControlSheet $controlSheet */
-        $controlSheet = $this->controlSheetRepository->findWithoutFail($id);
+        $controlSheet = $this->controlSheetRepository->find($id);
 
         if (empty($controlSheet)) {
             return $this->sendError('Control Sheet not found');

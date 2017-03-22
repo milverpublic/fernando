@@ -15,19 +15,30 @@ export class PacientController{
 
     $onInit(){
         this.loadPacients();
+        this.FunctionsService.removeObjectSessionStorage('current_selection');
+        this.FunctionsService.removeObjectSessionStorage('current_pacient');
     }
     loadPacients(){
         let vm=this;
-        this.API.one('pacients').get().then(function (response) {
+        this.API.one('pacients').get({size:10}).then(function (response) {
             vm.pacients=response.data;
         });
     }
 
     openFormPacient(){
-        this.FunctionsService.removeObjectSessionStorage('current_selection');
+        this.deleteCurrentSelection();
         this.$state.go('app.pacient',{steep:'section1'});
     }
-
+    openControlSheetPacient(person){
+        this.FunctionsService.setObjectSessionStorage('current_selection',{
+            'pacient_id': person.pacient.id,
+            'people_id': person.id,
+        });
+        this.$state.go('app.controlsheet');
+    }
+    deleteCurrentSelection(){
+        this.FunctionsService.removeObjectSessionStorage('current_selection');
+    }
     viewHistoryClinic(person){
         this.FunctionsService.setObjectSessionStorage('current_selection',{
             'pacient_id': person.pacient.id,

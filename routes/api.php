@@ -32,9 +32,11 @@ Route::group(['namespace' => 'API', 'middleware' => 'auth:api'], function () {
 
     Route::resource('control_sheets', 'ControlSheetAPIController');
 
-    Route::resource('observations', 'ObservationAPIController');
 
-    Route::resource('attachments', 'AttachmentAPIController');
+    Route::resource('controls', 'ControlAPIController');
+
+    Route::resource('comments', 'CommentAPIController');
+    
 
     Route::resource('history_clinics', 'HistoryClinicAPIController');
 

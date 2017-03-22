@@ -3,8 +3,7 @@ export class APIService {
 		'ngInject';
 		//content negotiation
         var blockUI=blockUI;
-        blockUIConfig.delay = 100;
-        blockUIConfig.message = 'Cargando...';
+        blockUIConfig.delay = 10;
 		let headers = {
 			'Content-Type': 'application/json',
 			'Accept': 'application/x.laravel.v1+json'
@@ -31,10 +30,8 @@ export class APIService {
 						headers.Authorization = 'Bearer ' + token;
 					}
                     blockUI.start();
-					console.log('aaaaaa');
 				})
                 .addResponseInterceptor(function (response, operation, what) {
-                    console.log('bbbbbb');
                     blockUI.stop();
                     return response
 

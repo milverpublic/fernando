@@ -1,0 +1,1139 @@
+@font-face {
+  font-family: 'umss-icon';
+  src:  url('fonts/umss-icon.eot?9rfrhk');
+  src:  url('fonts/umss-icon.eot?9rfrhk#iefix') format('embedded-opentype'),
+    url('fonts/umss-icon.ttf?9rfrhk') format('truetype'),
+    url('fonts/umss-icon.woff?9rfrhk') format('woff'),
+    url('fonts/umss-icon.svg?9rfrhk#umss-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="umss-"], [class*=" umss-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'umss-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.umss-clinic:before {
+  content: "\e900";
+}
+.umss-detail .path1:before {
+  content: "\e901";
+  color: rgb(247, 241, 230);
+}
+.umss-detail .path2:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(224, 220, 211);
+}
+.umss-detail .path3:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(222, 200, 174);
+}
+.umss-detail .path4:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(222, 200, 174);
+}
+.umss-detail .path5:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(222, 200, 174);
+}
+.umss-detail .path6:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(222, 200, 174);
+}
+.umss-detail .path7:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(222, 200, 174);
+}
+.umss-detail .path8:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(212, 61, 33);
+}
+.umss-detail-crap .path1:before {
+  content: "\e909";
+  color: rgb(247, 241, 230);
+}
+.umss-detail-crap .path2:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(224, 220, 211);
+}
+.umss-detail-crap .path3:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(119, 167, 162);
+}
+.umss-detail-crap .path4:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(119, 167, 162);
+}
+.umss-detail-crap .path5:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(222, 200, 174);
+}
+.umss-detail-crap .path6:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(222, 200, 174);
+}
+.umss-detail-crap .path7:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(222, 200, 174);
+}
+.umss-detail-crap .path8:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(222, 200, 174);
+}
+.umss-detail-crap .path9:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(222, 200, 174);
+}
+.umss-detail-crap .path10:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: rgb(222, 200, 174);
+}
+.umss-detail-crap .path11:before {
+  content: "\e913";
+  margin-left: -1em;
+  color: rgb(222, 200, 174);
+}
+.umss-detail-crap .path12:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: rgb(222, 200, 174);
+}
+.umss-detail-crap .path13:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(129, 182, 178);
+}
+.umss-detail-crap .path14:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: rgb(231, 68, 36);
+}
+.umss-diagnostic .path1:before {
+  content: "\e917";
+  color: rgb(43, 50, 55);
+}
+.umss-diagnostic .path2:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: rgb(195, 191, 184);
+}
+.umss-diagnostic .path3:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: rgb(43, 50, 55);
+}
+.umss-diagnostic .path4:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: rgb(43, 50, 55);
+}
+.umss-diagnostic .path5:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(224, 220, 211);
+}
+.umss-diagnostic .path6:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(230, 161, 35);
+}
+.umss-diagnostic .path7:before {
+  content: "\e91d";
+  margin-left: -1em;
+  color: rgb(230, 161, 35);
+}
+.umss-diagnostic .path8:before {
+  content: "\e91e";
+  margin-left: -1em;
+  color: rgb(224, 220, 211);
+}
+.umss-diagnostic .path9:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(247, 241, 230);
+}
+.umss-diagnostic .path10:before {
+  content: "\e920";
+  margin-left: -1em;
+  color: rgb(43, 50, 55);
+}
+.umss-hospital .path1:before {
+  content: "\e921";
+  color: rgb(247, 241, 230);
+}
+.umss-hospital .path2:before {
+  content: "\e922";
+  margin-left: -1em;
+  color: rgb(129, 182, 178);
+}
+.umss-hospital .path3:before {
+  content: "\e923";
+  margin-left: -1em;
+  color: rgb(129, 182, 178);
+}
+.umss-hospital .path4:before {
+  content: "\e924";
+  margin-left: -1em;
+  color: rgb(129, 182, 178);
+}
+.umss-hospital .path5:before {
+  content: "\e925";
+  margin-left: -1em;
+  color: rgb(129, 182, 178);
+}
+.umss-hospital .path6:before {
+  content: "\e926";
+  margin-left: -1em;
+  color: rgb(129, 182, 178);
+}
+.umss-hospital .path7:before {
+  content: "\e927";
+  margin-left: -1em;
+  color: rgb(129, 182, 178);
+}
+.umss-hospital .path8:before {
+  content: "\e928";
+  margin-left: -1em;
+  color: rgb(129, 182, 178);
+}
+.umss-hospital .path9:before {
+  content: "\e929";
+  margin-left: -1em;
+  color: rgb(129, 182, 178);
+}
+.umss-hospital .path10:before {
+  content: "\e92a";
+  margin-left: -1em;
+  color: rgb(129, 182, 178);
+}
+.umss-hospital .path11:before {
+  content: "\e92b";
+  margin-left: -1em;
+  color: rgb(129, 182, 178);
+}
+.umss-hospital .path12:before {
+  content: "\e92c";
+  margin-left: -1em;
+  color: rgb(224, 220, 211);
+}
+.umss-hospital .path13:before {
+  content: "\e92d";
+  margin-left: -1em;
+  color: rgb(231, 68, 36);
+}
+.umss-interface .path1:before {
+  content: "\e92e";
+  color: rgb(224, 224, 211);
+}
+.umss-interface .path2:before {
+  content: "\e92f";
+  margin-left: -1em;
+  color: rgb(51, 62, 72);
+}
+.umss-interface .path3:before {
+  content: "\e930";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-interface .path4:before {
+  content: "\e931";
+  margin-left: -1em;
+  color: rgb(0, 85, 184);
+}
+.umss-interface .path5:before {
+  content: "\e932";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.umss-interface .path6:before {
+  content: "\e933";
+  margin-left: -1em;
+  color: rgb(51, 62, 72);
+}
+.umss-interface .path7:before {
+  content: "\e934";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-interface .path8:before {
+  content: "\e935";
+  margin-left: -1em;
+  color: rgb(212, 144, 0);
+}
+.umss-interface .path9:before {
+  content: "\e936";
+  margin-left: -1em;
+  color: rgb(51, 62, 72);
+}
+.umss-interface .path10:before {
+  content: "\e937";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-interface .path11:before {
+  content: "\e938";
+  margin-left: -1em;
+  color: rgb(212, 144, 0);
+}
+.umss-interface-borded .path1:before {
+  content: "\e939";
+  color: rgb(224, 224, 211);
+}
+.umss-interface-borded .path2:before {
+  content: "\e93a";
+  margin-left: -1em;
+  color: rgb(51, 62, 72);
+}
+.umss-interface-borded .path3:before {
+  content: "\e93b";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-interface-borded .path4:before {
+  content: "\e93c";
+  margin-left: -1em;
+  color: rgb(0, 85, 184);
+}
+.umss-interface-borded .path5:before {
+  content: "\e93d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.umss-interface-borded .path6:before {
+  content: "\e93e";
+  margin-left: -1em;
+  color: rgb(51, 62, 72);
+}
+.umss-interface-borded .path7:before {
+  content: "\e93f";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-interface-borded .path8:before {
+  content: "\e940";
+  margin-left: -1em;
+  color: rgb(212, 144, 0);
+}
+.umss-interface-borded .path9:before {
+  content: "\e941";
+  margin-left: -1em;
+  color: rgb(51, 62, 72);
+}
+.umss-interface-borded .path10:before {
+  content: "\e942";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-interface-borded .path11:before {
+  content: "\e943";
+  margin-left: -1em;
+  color: rgb(212, 144, 0);
+}
+.umss-interface-borded .path12:before {
+  content: "\e944";
+  margin-left: -1em;
+  color: rgb(30, 37, 43);
+}
+.umss-login .path1:before {
+  content: "\e945";
+  color: rgb(169, 168, 174);
+}
+.umss-login .path2:before {
+  content: "\e946";
+  margin-left: -1em;
+  color: rgb(100, 195, 125);
+}
+.umss-medical .path1:before {
+  content: "\e947";
+  color: rgb(216, 217, 221);
+}
+.umss-medical .path2:before {
+  content: "\e948";
+  margin-left: -1em;
+  color: rgb(144, 197, 255);
+}
+.umss-medical .path3:before {
+  content: "\e949";
+  margin-left: -1em;
+  color: rgb(89, 89, 90);
+}
+.umss-medical .path4:before {
+  content: "\e94a";
+  margin-left: -1em;
+  color: rgb(216, 217, 221);
+}
+.umss-medical .path5:before {
+  content: "\e94b";
+  margin-left: -1em;
+  color: rgb(89, 89, 90);
+}
+.umss-medical .path6:before {
+  content: "\e94c";
+  margin-left: -1em;
+  color: rgb(89, 89, 90);
+}
+.umss-medical .path7:before {
+  content: "\e94d";
+  margin-left: -1em;
+  color: rgb(89, 89, 90);
+}
+.umss-medical .path8:before {
+  content: "\e94e";
+  margin-left: -1em;
+  color: rgb(91, 91, 95);
+  opacity: 0.3;
+}
+.umss-medical .path9:before {
+  content: "\e94f";
+  margin-left: -1em;
+  color: rgb(91, 91, 95);
+  opacity: 0.4;
+}
+.umss-medical .path10:before {
+  content: "\e950";
+  margin-left: -1em;
+  color: rgb(89, 89, 90);
+}
+.umss-medical .path11:before {
+  content: "\e951";
+  margin-left: -1em;
+  color: rgb(216, 217, 221);
+}
+.umss-medical .path12:before {
+  content: "\e952";
+  margin-left: -1em;
+  color: rgb(200, 82, 59);
+}
+.umss-medical .path13:before {
+  content: "\e953";
+  margin-left: -1em;
+  color: rgb(91, 91, 95);
+  opacity: 0.4;
+}
+.umss-note-plus .path1:before {
+  content: "\e954";
+  color: rgb(155, 144, 135);
+}
+.umss-note-plus .path2:before {
+  content: "\e955";
+  margin-left: -1em;
+  color: rgb(181, 175, 165);
+}
+.umss-note-plus .path3:before {
+  content: "\e956";
+  margin-left: -1em;
+  color: rgb(137, 126, 118);
+}
+.umss-note-plus .path4:before {
+  content: "\e957";
+  margin-left: -1em;
+  color: rgb(155, 144, 135);
+}
+.umss-note-plus .path5:before {
+  content: "\e958";
+  margin-left: -1em;
+  color: rgb(224, 213, 206);
+}
+.umss-note-plus .path6:before {
+  content: "\e959";
+  margin-left: -1em;
+  color: rgb(234, 221, 211);
+}
+.umss-note-plus .path7:before {
+  content: "\e95a";
+  margin-left: -1em;
+  color: rgb(201, 187, 179);
+}
+.umss-note-plus .path8:before {
+  content: "\e95b";
+  margin-left: -1em;
+  color: rgb(214, 203, 196);
+}
+.umss-note-plus .path9:before {
+  content: "\e95c";
+  margin-left: -1em;
+  color: rgb(145, 154, 155);
+}
+.umss-note-plus .path10:before {
+  content: "\e95d";
+  margin-left: -1em;
+  color: rgb(170, 180, 181);
+}
+.umss-note-plus .path11:before {
+  content: "\e95e";
+  margin-left: -1em;
+  color: rgb(201, 187, 179);
+}
+.umss-note-plus .path12:before {
+  content: "\e95f";
+  margin-left: -1em;
+  color: rgb(201, 187, 179);
+}
+.umss-note-plus .path13:before {
+  content: "\e960";
+  margin-left: -1em;
+  color: rgb(198, 82, 74);
+}
+.umss-note-plus .path14:before {
+  content: "\e961";
+  margin-left: -1em;
+  color: rgb(211, 98, 95);
+}
+.umss-paper-firm .path1:before {
+  content: "\e962";
+  color: rgb(224, 224, 211);
+}
+.umss-paper-firm .path2:before {
+  content: "\e963";
+  margin-left: -1em;
+  color: rgb(51, 62, 72);
+}
+.umss-paper-firm .path3:before {
+  content: "\e964";
+  margin-left: -1em;
+  color: rgb(51, 62, 72);
+}
+.umss-paper-firm .path4:before {
+  content: "\e965";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm .path5:before {
+  content: "\e966";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm .path6:before {
+  content: "\e967";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm .path7:before {
+  content: "\e968";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm .path8:before {
+  content: "\e969";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm .path9:before {
+  content: "\e96a";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm .path10:before {
+  content: "\e96b";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm .path11:before {
+  content: "\e96c";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm .path12:before {
+  content: "\e96d";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm .path13:before {
+  content: "\e96e";
+  margin-left: -1em;
+  color: rgb(51, 62, 72);
+}
+.umss-paper-firm .path14:before {
+  content: "\e96f";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.3;
+}
+.umss-paper-firm .path15:before {
+  content: "\e970";
+  margin-left: -1em;
+  color: rgb(51, 62, 72);
+}
+.umss-paper-firm .path16:before {
+  content: "\e971";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.2;
+}
+.umss-paper-firm .path17:before {
+  content: "\e972";
+  margin-left: -1em;
+  color: rgb(0, 130, 202);
+}
+.umss-paper-firm .path18:before {
+  content: "\e973";
+  margin-left: -1em;
+  color: rgb(51, 62, 72);
+}
+.umss-paper-firm .path19:before {
+  content: "\e974";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.umss-paper-firm .path20:before {
+  content: "\e975";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.umss-paper-firm-borded .path1:before {
+  content: "\e976";
+  color: rgb(224, 224, 211);
+}
+.umss-paper-firm-borded .path2:before {
+  content: "\e977";
+  margin-left: -1em;
+  color: rgb(51, 62, 72);
+}
+.umss-paper-firm-borded .path3:before {
+  content: "\e978";
+  margin-left: -1em;
+  color: rgb(51, 62, 72);
+}
+.umss-paper-firm-borded .path4:before {
+  content: "\e979";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm-borded .path5:before {
+  content: "\e97a";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm-borded .path6:before {
+  content: "\e97b";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm-borded .path7:before {
+  content: "\e97c";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm-borded .path8:before {
+  content: "\e97d";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm-borded .path9:before {
+  content: "\e97e";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm-borded .path10:before {
+  content: "\e97f";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm-borded .path11:before {
+  content: "\e980";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm-borded .path12:before {
+  content: "\e981";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-paper-firm-borded .path13:before {
+  content: "\e982";
+  margin-left: -1em;
+  color: rgb(0, 130, 202);
+}
+.umss-paper-firm-borded .path14:before {
+  content: "\e983";
+  margin-left: -1em;
+  color: rgb(51, 62, 72);
+}
+.umss-paper-firm-borded .path15:before {
+  content: "\e984";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.umss-paper-firm-borded .path16:before {
+  content: "\e985";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.umss-paper-firm-borded .path17:before {
+  content: "\e986";
+  margin-left: -1em;
+  color: rgb(30, 37, 43);
+}
+.umss-papers .path1:before {
+  content: "\e987";
+  color: rgb(224, 224, 211);
+}
+.umss-papers .path2:before {
+  content: "\e988";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path3:before {
+  content: "\e989";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path4:before {
+  content: "\e98a";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path5:before {
+  content: "\e98b";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path6:before {
+  content: "\e98c";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path7:before {
+  content: "\e98d";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path8:before {
+  content: "\e98e";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path9:before {
+  content: "\e98f";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path10:before {
+  content: "\e990";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path11:before {
+  content: "\e991";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path12:before {
+  content: "\e992";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path13:before {
+  content: "\e993";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path14:before {
+  content: "\e994";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path15:before {
+  content: "\e995";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path16:before {
+  content: "\e996";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path17:before {
+  content: "\e997";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.2;
+}
+.umss-papers .path18:before {
+  content: "\e998";
+  margin-left: -1em;
+  color: rgb(224, 224, 211);
+}
+.umss-papers .path19:before {
+  content: "\e999";
+  margin-left: -1em;
+  color: rgb(51, 62, 72);
+}
+.umss-papers .path20:before {
+  content: "\e99a";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path21:before {
+  content: "\e99b";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path22:before {
+  content: "\e99c";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path23:before {
+  content: "\e99d";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path24:before {
+  content: "\e99e";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path25:before {
+  content: "\e99f";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path26:before {
+  content: "\e9a0";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path27:before {
+  content: "\e9a1";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path28:before {
+  content: "\e9a2";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path29:before {
+  content: "\e9a3";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-papers .path30:before {
+  content: "\e9a4";
+  margin-left: -1em;
+  color: rgb(92, 102, 112);
+}
+.umss-people .path1:before {
+  content: "\e9a5";
+  color: rgb(255, 215, 163);
+}
+.umss-people .path2:before {
+  content: "\e9a6";
+  margin-left: -1em;
+  color: rgb(253, 200, 142);
+}
+.umss-people .path3:before {
+  content: "\e9a7";
+  margin-left: -1em;
+  color: rgb(255, 225, 178);
+}
+.umss-people .path4:before {
+  content: "\e9a8";
+  margin-left: -1em;
+  color: rgb(255, 225, 178);
+}
+.umss-people .path5:before {
+  content: "\e9a9";
+  margin-left: -1em;
+  color: rgb(255, 225, 178);
+}
+.umss-people .path6:before {
+  content: "\e9aa";
+  margin-left: -1em;
+  color: rgb(126, 84, 73);
+}
+.umss-people .path7:before {
+  content: "\e9ab";
+  margin-left: -1em;
+  color: rgb(126, 84, 73);
+}
+.umss-people .path8:before {
+  content: "\e9ac";
+  margin-left: -1em;
+  color: rgb(82, 121, 146);
+}
+.umss-people .path9:before {
+  content: "\e9ad";
+  margin-left: -1em;
+  color: rgb(84, 84, 101);
+}
+.umss-people .path10:before {
+  content: "\e9ae";
+  margin-left: -1em;
+  color: rgb(208, 215, 220);
+}
+.umss-people .path11:before {
+  content: "\e9af";
+  margin-left: -1em;
+  color: rgb(71, 95, 127);
+}
+.umss-people .path12:before {
+  content: "\e9b0";
+  margin-left: -1em;
+  color: rgb(71, 95, 127);
+}
+.umss-people .path13:before {
+  content: "\e9b1";
+  margin-left: -1em;
+  color: rgb(84, 84, 101);
+}
+.umss-people .path14:before {
+  content: "\e9b2";
+  margin-left: -1em;
+  color: rgb(228, 235, 240);
+}
+.umss-people .path15:before {
+  content: "\e9b3";
+  margin-left: -1em;
+  color: rgb(228, 235, 240);
+}
+.umss-people .path16:before {
+  content: "\e9b4";
+  margin-left: -1em;
+  color: rgb(208, 215, 220);
+}
+.umss-people .path17:before {
+  content: "\e9b5";
+  margin-left: -1em;
+  color: rgb(208, 215, 220);
+}
+.umss-people .path18:before {
+  content: "\e9b6";
+  margin-left: -1em;
+  color: rgb(228, 235, 240);
+}
+.umss-person-add .path1:before {
+  content: "\e9b7";
+  color: rgb(252, 208, 159);
+}
+.umss-person-add .path2:before {
+  content: "\e9b8";
+  margin-left: -1em;
+  color: rgb(239, 128, 111);
+}
+.umss-person-add .path3:before {
+  content: "\e9b9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.umss-person-add .path4:before {
+  content: "\e9ba";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.umss-person-add .path5:before {
+  content: "\e9bb";
+  margin-left: -1em;
+  color: rgb(30, 166, 198);
+}
+.umss-round .path1:before {
+  content: "\e9bc";
+  color: rgb(228, 234, 248);
+}
+.umss-round .path2:before {
+  content: "\e9bd";
+  margin-left: -1em;
+  color: rgb(255, 80, 80);
+}
+.umss-round .path3:before {
+  content: "\e9be";
+  margin-left: -1em;
+  color: rgb(112, 116, 135);
+}
+.umss-round .path4:before {
+  content: "\e9bf";
+  margin-left: -1em;
+  color: rgb(127, 132, 153);
+}
+.umss-round .path5:before {
+  content: "\e9c0";
+  margin-left: -1em;
+  color: rgb(127, 132, 153);
+}
+.umss-round .path6:before {
+  content: "\e9c1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.umss-round .path7:before {
+  content: "\e9c2";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.umss-round .path8:before {
+  content: "\e9c3";
+  margin-left: -1em;
+  color: rgb(228, 234, 248);
+}
+.umss-round .path9:before {
+  content: "\e9c4";
+  margin-left: -1em;
+  color: rgb(255, 220, 100);
+}
+.umss-round .path10:before {
+  content: "\e9c5";
+  margin-left: -1em;
+  color: rgb(112, 116, 135);
+}
+.umss-round .path11:before {
+  content: "\e9c6";
+  margin-left: -1em;
+  color: rgb(127, 132, 153);
+}
+.umss-round .path12:before {
+  content: "\e9c7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.umss-round .path13:before {
+  content: "\e9c8";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.umss-round .path14:before {
+  content: "\e9c9";
+  margin-left: -1em;
+  color: rgb(228, 234, 248);
+}
+.umss-round .path15:before {
+  content: "\e9ca";
+  margin-left: -1em;
+  color: rgb(125, 245, 165);
+}
+.umss-round .path16:before {
+  content: "\e9cb";
+  margin-left: -1em;
+  color: rgb(112, 116, 135);
+}
+.umss-round .path17:before {
+  content: "\e9cc";
+  margin-left: -1em;
+  color: rgb(127, 132, 153);
+}
+.umss-round .path18:before {
+  content: "\e9cd";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.umss-round .path19:before {
+  content: "\e9ce";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.umss-round .path20:before {
+  content: "\e9cf";
+  margin-left: -1em;
+  color: rgb(213, 220, 237);
+}
+.umss-round .path21:before {
+  content: "\e9d0";
+  margin-left: -1em;
+  color: rgb(213, 220, 237);
+}
+.umss-round .path22:before {
+  content: "\e9d1";
+  margin-left: -1em;
+  color: rgb(70, 70, 85);
+}
+.umss-round .path23:before {
+  content: "\e9d2";
+  margin-left: -1em;
+  color: rgb(127, 132, 153);
+}
+.umss-round .path24:before {
+  content: "\e9d3";
+  margin-left: -1em;
+  color: rgb(127, 132, 153);
+}
+.umss-sheet .path1:before {
+  content: "\e9d4";
+  color: rgb(224, 224, 223);
+}
+.umss-sheet .path2:before {
+  content: "\e9d5";
+  margin-left: -1em;
+  color: rgb(96, 195, 171);
+}
+.umss-sheet .path3:before {
+  content: "\e9d6";
+  margin-left: -1em;
+  color: rgb(175, 179, 178);
+}
+.umss-sheet .path4:before {
+  content: "\e9d7";
+  margin-left: -1em;
+  color: rgb(175, 179, 178);
+}
+.umss-sheet .path5:before {
+  content: "\e9d8";
+  margin-left: -1em;
+  color: rgb(175, 179, 178);
+}
+.umss-sheet .path6:before {
+  content: "\e9d9";
+  margin-left: -1em;
+  color: rgb(175, 179, 178);
+}
+.umss-view .path1:before {
+  content: "\e9da";
+  color: rgb(237, 237, 237);
+}
+.umss-view .path2:before {
+  content: "\e9db";
+  margin-left: -1em;
+  color: rgb(61, 179, 158);
+}
+.umss-view .path3:before {
+  content: "\e9dc";
+  margin-left: -1em;
+  color: rgb(158, 217, 207);
+}
+.umss-view .path4:before {
+  content: "\e9dd";
+  margin-left: -1em;
+  color: rgb(50, 77, 91);
+}
+.umss-view .path5:before {
+  content: "\e9de";
+  margin-left: -1em;
+  color: rgb(153, 166, 173);
+}
+.umss-view .path6:before {
+  content: "\e9df";
+  margin-left: -1em;
+  color: rgb(43, 66, 77);
+}
+.umss-view .path7:before {
+  content: "\e9e0";
+  margin-left: -1em;
+  color: rgb(55, 161, 142);
+}
+

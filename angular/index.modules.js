@@ -19,7 +19,6 @@ angular.module('app.controllers', []);
 angular.module('app.components', [
 	'ui.router', 'ui.bootstrap', 'toastr',
 	'restangular', 'ngStorage', 'satellizer',
-	'angularValidator', 'ngFlatDatepicker',
-	'blockUI'
+	'angularValidator', 'blockUI','mdr.datepicker'
 ]);
 

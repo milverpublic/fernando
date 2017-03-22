@@ -40,20 +40,13 @@ export function RoutesConfig($stateProvider, $urlRouterProvider) {
             }
         })
         .state('app.controlsheet', {
-            url: '/controlsheet/:pacientId',
+            url: '/controlsheet',
             data: {auth: true},
             views: {
                 'main@': {
-                    templateUrl: getView('control-sheet')
-                }
-            }
-        })
-        .state('app.controlsheetcreate', {
-            url: '/sheetcreate/:pacientId',
-            data: {auth: true},
-            views: {
-                'main@': {
-                    templateUrl: getView('control-sheet-create')
+                    templateUrl: getView('control-sheet'),
+                    controller:getController('ControlSheet'),
+                    controllerAs: 'vm'
                 }
             }
         })

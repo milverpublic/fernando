@@ -27,3 +27,89 @@ body{
         text-align: right;
     }
 }
+//custom header
+.navbar-inverse {
+    background-color: #174158;
+    border-color: #174158;
+}
+.navbar {
+    position: relative;
+    min-height: 80px;
+}
+.navbar-inverse .navbar-nav > .active > a{
+    background-color: #174158;
+}
+
+//custom loading
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+#loadIcon {
+    margin: 60px auto;
+    height: 120px;
+    width: 120px;
+    position: relative;
+}
+#loadIcon div {
+    position: absolute;
+}
+#loadIcon div:first-child {
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+    border-top: solid 10px #174158;
+    animation: spin 2s infinite;
+    -webkit-animation: spin 2s infinite;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+}
+#loadIcon div:nth-child(2) {
+    height: 90px;
+    width: 90px;
+    border-radius: 45px;
+    border-top: solid 10px #41748d;
+    top: 15px;
+    left: 15px;
+    animation: spin 1.5s infinite;
+    -webkit-animation: spin 1.5s infinite;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+}
+#loadIcon div:nth-child(3) {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    border-top: solid 10px #ff1a01;
+    top: 30px;
+    left: 30px;
+    animation: spin 1s infinite;
+    -webkit-animation: spin 1s infinite;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+}
+#loadIcon div:nth-child(4) {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    border-top: solid 10px #c61901;
+    top: 45px;
+    left: 45px;
+    animation: spin 0.5s infinite;
+    -webkit-animation: spin 0.5s infinite;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+}
+//custom loading

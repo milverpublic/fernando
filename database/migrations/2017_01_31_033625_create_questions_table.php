@@ -18,6 +18,7 @@ class CreateQuestionsTable extends Migration
             $table->string('name');
             $table->string('input_type')->nullable();
             $table->string('model');
+            $table->boolean('required')->default(false);
             $table->integer('section_id')->unsigned();
             $table->foreign('section_id')->references('id')->on('sections')->onDelete('cascade');
             $table->timestamps();

@@ -24,6 +24,7 @@
     "tg-angular-validator": "^1.2.9",
     "ng-flat-datepicker": "^0.1.2",
     "angular-moment": "^1.0.1",
-    "angular-block-ui": "^0.2.2"
+    "angular-block-ui": "^0.2.2",
+    "mdr-angular-datepicker": "^1.0.6"
   }
 }

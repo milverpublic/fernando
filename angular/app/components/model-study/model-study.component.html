@@ -1,0 +1,62 @@
+<form ng-submit="vm.saveModelStudy()" name="modelStudyForm" class="form-horizontal form-group-sm">
+    <fieldset ng-repeat="form in vm.form.data">
+        <legend ng-if="form.printable">{{form.name_section}}</legend>
+        <div class="form-group" ng-repeat="question in form.questions">
+            <div ng-if="(question.input_type=='checkbox') && ((question.model=='question65') ||question.model=='question66')">
+                <label class="col-sm-2 control-label">{{question.name}}</label>
+                <div class="col-sm-10">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline checkbox checkbox-primary">
+                                        <input type="checkbox" ng-model="vm.response.question[question.model].positive" ng-value="POSITIVE"> Positivo
+                                    </label>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="input-group">
+                                        <input type="text" id="{{question.model}}Id"
+                                               ng-model="vm.response.question[question.model].mm" class="form-control">
+                                        <span class="input-group-addon">.mm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline checkbox checkbox-primary">
+                                        <input type="checkbox" ng-model="vm.response.question[question.model].negative" ng-value="NEGATIVE"> Negativo
+                                    </label>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="input-group">
+                                        <input type="text"
+                                               ng-model="vm.response.question[question.model].mm" class="form-control">
+                                        <span class="input-group-addon">.mm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div ng-if="(question.input_type=='text')">
+                <label class="col-sm-2 control-label">{{question.name}}</label>
+                <div class="col-sm-10">
+                    <input type="text"
+                           ng-model="vm.response.question[question.model]"
+                           placeholder="{{question.name}}" class="form-control">
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <div class="form-group">
+        <div ng-if="vm.mode_edition" class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-success">Actualizar</button>
+        </div>
+        <div ng-if="!vm.mode_edition" class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-success">Guardar</button>
+        </div>
+    </div>
+</form>

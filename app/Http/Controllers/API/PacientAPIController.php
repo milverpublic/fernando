@@ -49,7 +49,7 @@ class PacientAPIController extends AppBaseController
     {
         $this->pacientRepository->pushCriteria(new RequestCriteria($request));
         $this->pacientRepository->pushCriteria(new LimitOffsetCriteria($request));
-        $persons = $this->personRepository->paginate(5);
+        $persons = $this->personRepository->paginate($request->get('size'));
         foreach ($persons as $person){
             $pacient = $this->pacientRepository->findWhere(['people_id' => $person->id])->first();
             $history_clinic=$this->historyClinicRepository->findWhere(['pacient_id' => $person->id])->first();

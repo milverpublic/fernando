@@ -1,9 +1,13 @@
+import {CommentModalComponent} from './app/components/comment-modal/comment-modal.component';
+import {ControlComponent} from './app/components/control/control.component';
+import {IconUmssComponent} from './app/components/icon-umss/icon-umss.component';
+import {TreatmentPlanComponent} from './app/components/treatment-plan/treatment-plan.component';
+import {DiagnosticComponent} from './app/components/diagnostic/diagnostic.component';
+import {ModelStudyComponent} from './app/components/model-study/model-study.component';
 import {ExamClinicComponent} from './app/components/exam-clinic/exam-clinic.component';
 import {InfoPacientComponent} from './app/components/info-pacient/info-pacient.component';
 import {SummaryGeneralComponent} from './app/components/summary-general/summary-general.component';
 import {SteeperFormComponent} from './app/components/steeper-form/steeper-form.component';
-import {ControlSheetFormComponent} from './app/components/control-sheet-form/control-sheet-form.component';
-import {ControlSheetComponent} from './app/components/control-sheet/control-sheet.component';
 import {AppHeaderComponent} from './app/components/app-header/app-header.component';
 import {AppRootComponent} from './app/components/app-root/app-root.component';
 import {AppShellComponent} from './app/components/app-shell/app-shell.component';
@@ -13,12 +17,16 @@ import {LoginFormComponent} from './app/components/login-form/login-form.compone
 import {RegisterFormComponent} from './app/components/register-form/register-form.component';
 
 angular.module('app.components')
+	.component('commentModal', CommentModalComponent)
+	.component('control', ControlComponent)
+	.component('iconUmss', IconUmssComponent)
+	.component('treatmentPlan', TreatmentPlanComponent)
+	.component('diagnostic', DiagnosticComponent)
+	.component('modelStudy', ModelStudyComponent)
 	.component('examClinic', ExamClinicComponent)
 	.component('infoPacient', InfoPacientComponent)
 	.component('summaryGeneral', SummaryGeneralComponent)
 	.component('steeperForm', SteeperFormComponent)
-	.component('controlSheetForm', ControlSheetFormComponent)
-	.component('controlSheet', ControlSheetComponent)
 	.component('appHeader', AppHeaderComponent)
 	.component('appRoot', AppRootComponent)
 	.component('appShell', AppShellComponent)

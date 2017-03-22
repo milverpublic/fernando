@@ -53,7 +53,7 @@ class SectionAPIController extends AppBaseController
     }
 
     public function questions($id){
-        $subsections=$this->sectionRepository->findWhere(['section_id' => $id]);
+        $subsections=$this->sectionRepository->findWhere(['section_id' => $id,'enable'=>true]);
         foreach ($subsections as $subsection){
             $q=$this->questionRepository->findWhere(['section_id' => $subsection->id]);
             $subsection->questions=$q;

@@ -1,10 +1,14 @@
-<a ng-click="vm.openFormPacient()" class="btn btn-sm btn-success">create</a>
-<table class="table table-striped">
+<a ng-click="vm.openFormPacient()" class="btn btn-sm btn-success">
+    CREATE
+</a>
+
+<table class="table table-striped table-bordered">
     <thead>
     <tr>
         <th>Paciente</th>
         <th>Derivado por</th>
         <th>Motivo</th>
+        <th>Progreso</th>
         <th>#</th>
         <th>#</th>
     </tr>
@@ -15,25 +19,20 @@
         <td>{{row.pacient.derivado_por}}</td>
         <td>{{row.pacient.motivo_consulta}}</td>
         <td>
-            <a ui-sref="app.controlsheet({pacientId:row.id})" class="btn btn-link"><i class="fa fa-lg fa-list-alt "></i></a>
+            <div class="progress-radial progress-{{row.pacient.history_clinic.progress}}">
+                <div class="overlay">{{row.pacient.history_clinic.progress}}%</div>
+            </div>
         </td>
         <td>
-            <button ng-click="vm.viewHistoryClinic(row)" class="btn btn-link"><i class="fa fa-lg fa-eye "></i></button>
+            <a ng-if="row.pacient.history_clinic.completed=='COMPLETED'" ng-click="vm.openControlSheetPacient(row)">
+                <icon-umss icon="interface" size="umss-icon-2X"></icon-umss>
+            </a>
+        </td>
+        <td>
+            <button ng-click="vm.viewHistoryClinic(row)" class="btn btn-link">
+                <icon-umss icon="round" size="umss-icon-2X"></icon-umss>
+            </button>
         </td>
     </tr>
     </tbody>
 </table>
-
-<script type="text/ng-template" id="myModalContent.html">
-    <div class="modal-header">
-        <h3 class="modal-title">I'm a modal!</h3>
-    </div>
-    <div class="modal-body">
-        aaaaa
-        <h4>Selected: <small><code>{{ selected.item }}</code></small></h4>
-    </div>
-    <div class="modal-footer">
-        <button class="btn btn-primary" type="button" ng-click="mvm.ok()">OK</button>
-        <button class="btn btn-warning" type="button" ng-click="mvm.cancel()">Cancel</button>
-    </div>
-</script>

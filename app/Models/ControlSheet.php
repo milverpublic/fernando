@@ -21,9 +21,8 @@ class ControlSheet extends Model
 
 
     public $fillable = [
-        'fecha_tratamiento',
-        'tratamiento',
-        'tratamiento_next',
+        'date_created',
+        'status',
         'pacient_id'
     ];
 
@@ -33,9 +32,8 @@ class ControlSheet extends Model
      * @var array
      */
     protected $casts = [
-        'fecha_tratamiento' => 'date',
-        'tratamiento' => 'string',
-        'tratamiento_next' => 'string'
+        'date_created' => 'date',
+        'status' => 'string'
     ];
 
     /**
@@ -44,9 +42,7 @@ class ControlSheet extends Model
      * @var array
      */
     public static $rules = [
-        'fecha_tratamiento' => 'required|date',
-        'tratamiento' => 'required',
-        'tratamiento_next' => 'required'
+
     ];
 
     

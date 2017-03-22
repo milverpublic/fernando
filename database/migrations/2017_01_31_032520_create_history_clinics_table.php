@@ -18,6 +18,8 @@ class CreateHistoryClinicsTable extends Migration
             $table->integer('pacient_id')->unsigned();
             $table->foreign('pacient_id')->references('id')->on('pacients')->onDelete('cascade');
             $table->string('actualizado_por');
+            $table->integer('progress')->default(10);
+            $table->string('completed')->default('PROGRESS');
             $table->timestamps();
             $table->softDeletes();
         });

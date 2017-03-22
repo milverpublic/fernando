@@ -15,9 +15,8 @@ class CreateControlSheetsTable extends Migration
     {
         Schema::create('control_sheets', function (Blueprint $table) {
             $table->increments('id');
-            $table->date('fecha_tratamiento');
-            $table->string('tratamiento');
-            $table->string('tratamiento_next');
+            $table->date('date_created')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->string("status")->default("progress");
             $table->integer('pacient_id')->unsigned();
             $table->foreign('pacient_id')->references('id')->on('pacients')->onDelete('cascade');
             $table->timestamps();
