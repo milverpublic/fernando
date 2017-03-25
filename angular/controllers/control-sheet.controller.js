@@ -13,6 +13,7 @@ export class ControlSheetController{
         this.$scope=$scope;
         this.controlSheet=null;
         this.controls=null;
+        this.pacient=null;
         this.$uibModal=$uibModal;
     }
     $onInit(){
@@ -50,14 +51,17 @@ export class ControlSheetController{
     }
     loadControlSheets(){
         let vm=this;
-        let pacient=this.FunctionsService.getObjectSessionStorage('current_selection');
+        let pacient=this.FunctionsService.getObjectSessionStorage('current_pacient');
         this.API.one('control_sheets').get({'pacient_id':pacient.pacient_id})
             .then(function (response) {
-            vm.controlSheet=response.data;
+            vm.controlSheet=response.data[0];
         })
             .then(function () {
-            vm.API.one('controls').get({'control_sheet_id':vm.controlSheet.id}).then(function (response) {
+            vm.API.one('controls',vm.controlSheet.id).get().then(function (response) {
                 vm.controls=response.data;
+            });
+            vm.API.one('peoplepacient',pacient.people_id).get().then(function (response) {
+                vm.pacient=response.data;
             });
         });
     }

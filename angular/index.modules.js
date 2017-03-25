@@ -19,6 +19,6 @@ angular.module('app.controllers', []);
 angular.module('app.components', [
 	'ui.router', 'ui.bootstrap', 'toastr',
 	'restangular', 'ngStorage', 'satellizer',
-	'angularValidator', 'blockUI','mdr.datepicker'
+	'blockUI', 'ghiscoding.validation', 'pascalprecht.translate'
 ]);
 

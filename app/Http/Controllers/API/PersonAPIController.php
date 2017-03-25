@@ -81,6 +81,14 @@ class PersonAPIController extends AppBaseController
     }
 
     /**
+     * @param $id people id
+     */
+    public function getPacient($id){
+        $person=$this->personRepository->with('pacient')->find($id);
+        return $this->sendResponse($person->toArray(),'');
+    }
+
+    /**
      * Update the specified Person in storage.
      * PUT/PATCH /people/{id}
      *

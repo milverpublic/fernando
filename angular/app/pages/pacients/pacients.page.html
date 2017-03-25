@@ -24,9 +24,10 @@
             </div>
         </td>
         <td>
-            <a ng-if="row.pacient.history_clinic.completed=='COMPLETED'" ng-click="vm.openControlSheetPacient(row)">
+            <button ng-if="row.pacient.history_clinic.completed=='COMPLETED'"
+                    ng-click="vm.openControlSheetPacient(row)" class="btn btn-link">
                 <icon-umss icon="interface" size="umss-icon-2X"></icon-umss>
-            </a>
+            </button>
         </td>
         <td>
             <button ng-click="vm.viewHistoryClinic(row)" class="btn btn-link">

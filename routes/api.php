@@ -27,6 +27,7 @@ Route::post('auth/password/reset', 'Auth\PasswordResetController@reset');
 //})->middleware('auth:api');
 Route::group(['namespace' => 'API', 'middleware' => 'auth:api'], function () {
     Route::resource('people', 'PersonAPIController');
+    Route::get('peoplepacient/{id}', 'PersonAPIController@getPacient');
 
     Route::resource('pacients', 'PacientAPIController');
 

@@ -9,16 +9,12 @@ class SteeperFormController{
         this.FunctionsService=FunctionsService;
         this.pacient=null;
         this.mode_edition=false;
-
-        this.open = function() {
-            this.status.opened = true;
-        };
-
-        this.format = 'shortDate';
-
-        this.status = {
-            opened: false
-        };
+        this.datepickerOptions={
+            format: 'yyyy-mm-dd',
+            language: 'es',
+            autoclose: true,
+            weekStart: 0,
+        }
     }
 
     $onInit(){

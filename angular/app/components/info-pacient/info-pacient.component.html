@@ -10,42 +10,60 @@
                           class="form-control"></textarea>
 
                 <div ng-if="(question.input_type=='checkbox') && (question.model=='question7')">
-                    <label class="checkbox-inline checkbox checkbox-primary">
-                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox1" ng-value="Asma"> Asma
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox2" ng-value="Diabetes"> Diabetes
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox3"> Hepatitis
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox4"> Enfermedades Cardiacas
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox5"> Anemia
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox6"> Fiebre reumatica
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox7"> Enfermedades sanguineas
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox8"> Epilepsia
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox9"> Transtornos oseos
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox10"> Transtornos auditivos
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox11"> Danio craneo faceal
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" ng-model="vm.response.question[question.model].checkbox12"> Otros
-                    </label>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <dd>
+                                <label class="col-md-4 checkbox-inline">
+                                    <input type="checkbox" ng-model="vm.response.question[question.model].checkbox1">Asma
+                                </label>
+                                <label class="col-md-4 checkbox-inline">
+                                    <input type="checkbox" ng-model="vm.response.question[question.model].checkbox2">Diabetes
+                                </label>
+                                <label class="col-md-3 checkbox-inline">
+                                    <input type="checkbox" ng-model="vm.response.question[question.model].checkbox3"> Hepatitis
+                                </label>
+                            </dd>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label class="col-md-4 checkbox-inline">
+                                <input type="checkbox" ng-model="vm.response.question[question.model].checkbox4"> Enfermedades Cardiacas
+                            </label>
+                            <label class="col-md-4 checkbox-inline">
+                                <input type="checkbox" ng-model="vm.response.question[question.model].checkbox5"> Anemia
+                            </label>
+                            <label class="col-md-3 checkbox-inline">
+                                <input type="checkbox" ng-model="vm.response.question[question.model].checkbox6"> Fiebre reumatica
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label class="col-md-4 checkbox-inline">
+                                <input type="checkbox" ng-model="vm.response.question[question.model].checkbox7"> Enfermedades sanguineas
+                            </label>
+                            <label class="col-md-4 checkbox-inline">
+                                <input type="checkbox" ng-model="vm.response.question[question.model].checkbox8"> Epilepsia
+                            </label>
+                            <label class="col-md-3 checkbox-inline">
+                                <input type="checkbox" ng-model="vm.response.question[question.model].checkbox9"> Transtornos oseos
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label class="col-md-4 checkbox-inline">
+                                <input type="checkbox" ng-model="vm.response.question[question.model].checkbox10"> Transtornos auditivos
+                            </label>
+                            <label class="col-md-4 checkbox-inline">
+                                <input type="checkbox" ng-model="vm.response.question[question.model].checkbox11"> Danio craneo faceal
+                            </label>
+                            <label class="col-md-3 checkbox-inline">
+                                <input type="checkbox" ng-model="vm.response.question[question.model].checkbox12"> Otros
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div ng-if="(question.input_type=='radiobutton') && (question.model=='question9')">
                     <label class="radio-inline">

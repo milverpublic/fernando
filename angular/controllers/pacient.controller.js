@@ -30,7 +30,7 @@ export class PacientController{
         this.$state.go('app.pacient',{steep:'section1'});
     }
     openControlSheetPacient(person){
-        this.FunctionsService.setObjectSessionStorage('current_selection',{
+        this.FunctionsService.setObjectSessionStorage('current_pacient',{
             'pacient_id': person.pacient.id,
             'people_id': person.id,
         });

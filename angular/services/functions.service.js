@@ -14,7 +14,7 @@ export class FunctionsService{
         }
     }
     setObjectSessionStorage(key,data){
-        this.$sessionStorage.setItem('current_selection',JSON.stringify(data));
+        this.$sessionStorage.setItem(key,JSON.stringify(data));
     }
     getObjectSessionStorage(key){
         return JSON.parse(this.$sessionStorage.getItem(key));
