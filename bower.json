@@ -21,7 +21,7 @@
     "bootstrap": "^3.3.7",
     "angular-permission": "^5.1.0",
     "angular-moment": "^1.0.1",
-    "angular-block-ui": "^0.2.2",
-    "angular-validation-ghiscoding": "^1.5.17"
+    "angular-validation-ghiscoding": "^1.5.17",
+    "angular-block-ui": "milvergithub/angular-loading"
   }
 }

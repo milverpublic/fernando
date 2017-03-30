@@ -41,6 +41,11 @@ Elixir.extend('bower', function(jsOutputFile, jsOutputFolder, cssOutputFile, css
                     main: [
                         './dist/jquery.js'
                     ]
+                },
+                "angular-block-ui": {
+                    main: [
+                        './dist/angular-block-ui/angular-block-ui.js'
+                    ]
                 }
             }
         }))
@@ -69,6 +74,11 @@ Elixir.extend('bower', function(jsOutputFile, jsOutputFolder, cssOutputFile, css
                 "angular-bootstrap":{
                     main: [
                         'ui-bootstrap-csp.css'
+                    ]
+                },
+                "angular-block-ui":{
+                    main: [
+                        './dist/angular-block-ui/angular-block-ui.css'
                     ]
                 }
             }
